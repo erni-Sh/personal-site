@@ -1,13 +1,13 @@
-// import '../../public/assets/css/master.css';
+import '../../public/assets/css/master.css';
 
 export default function Home() {
   return (
     <main>
-      <div className="page-loader">
-        <div className="vertical-align align-center">
-          <img src="assets/loader/loader.gif" alt="" className="loader-img"/>
-        </div>
-      </div>
+      {/*<div className="page-loader">*/}
+      {/*  <div className="vertical-align align-center">*/}
+      {/*    <img src="assets/loader/loader.gif" alt="" className="loader-img"/>*/}
+      {/*  </div>*/}
+      {/*</div>*/}
 
       {/* =============== START BREADCRUMB ================ */}
       <section className="no-mb">
