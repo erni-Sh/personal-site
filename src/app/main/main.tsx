@@ -1,3 +1,4 @@
+import {FC, JSX} from 'react';
 import PageLoader from '@/app/main/sections/page-loader';
 import BreadCrumb from '@/app/main/sections/bread-crumb';
 import AudioPlayer from '@/components/audio-player/audio-player';

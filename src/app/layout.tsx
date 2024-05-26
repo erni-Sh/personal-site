@@ -1,4 +1,5 @@
-import '../../public/assets/css/master.css';
+// import '../../public/assets/css/master.css';
+import '@/styles/master.less';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import AudioPlayer from '@/components/audio-player/audio-player';
