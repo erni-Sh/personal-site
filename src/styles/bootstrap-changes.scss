@@ -13,12 +13,12 @@
 	background-color: #ffffff;
 	background-image: none;
 	border: 2px solid #f5f5f5;
-	border-radius: @input-border-radius;
+	border-radius: $input-border-radius;
 	box-shadow: none;
-	.transition(~"border-color ease-in-out 0.3s, box-shadow ease-in-out .15s");
+	@include transition("border-color ease-in-out 0.3s, box-shadow ease-in-out .15s");
 
 	&:hover , &:active , &:focus {
-		border-color: @theme-color-base;
+		border-color: $theme-color-base;
 		box-shadow: none;
 	}
 }
@@ -34,9 +34,9 @@
 	position: relative;
 	cursor: pointer;
 	z-index: 1;
-	.transition;
+	@include transition;
 	background-image: none;
-	border: 2px solid @theme-color-base;
+	border: 2px solid $theme-color-base;
 	white-space: nowrap;
 	padding: 1.3rem 2rem;
 	font-size: 1.4rem;
@@ -54,16 +54,16 @@
 		height: 0;
 		left: 0;
 		background: #313537;
-		.transition;
+		@include transition;
 		z-index: -1;
 	}
 	&:hover {
 		text-decoration: none;
 		outline: none;
 		color: #fff;
-		border-color: @theme-color-base;
+		border-color: $theme-color-base;
 		&:after {
-			background: @theme-color-base;
+			background: $theme-color-base;
 			height: 100%;
 		}
 	}
@@ -79,7 +79,7 @@
 table {
 	width: 100%;
 	max-width: 100%;
-	margin-bottom: @line-height-computed;
+	margin-bottom: $line-height-computed;
 	// Cells
 	> thead,
 	> tbody,
@@ -87,17 +87,17 @@ table {
 		> tr {
 			> th,
 			> td {
-				padding: @table-cell-padding;
-				line-height: @line-height-base;
+				padding: $table-cell-padding;
+				line-height: $line-height-base;
 				vertical-align: top;
-				border-top: 1px solid @table-border-color;
+				border-top: 1px solid $table-border-color;
 			}
 		}
 	}
 	// Bottom align for column headings
 	> thead > tr > th {
 		vertical-align: bottom;
-		border-bottom: 2px solid @table-border-color;
+		border-bottom: 2px solid $table-border-color;
 	}
 	// Remove top border from thead by default
 	> caption + thead,
@@ -112,6 +112,6 @@ table {
 	}
 	// Account for multiple tbody instances
 	> tbody + tbody {
-		border-top: 2px solid @table-border-color;
+		border-top: 2px solid $table-border-color;
 	}
 }

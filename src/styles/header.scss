@@ -20,7 +20,7 @@
     &.affix{
         background-color: #fdfdfd;
     }
-    .transition();
+    @include transition();
 }
 
 .logo-container-top {
@@ -59,12 +59,12 @@
 	h4{
 		font-weight: 400;
 		font-size: 1.1rem;
-		font-family: @baseFont;
+		font-family: $baseFont;
 	}
 	h1{
 		font-weight: 300;
 		font-size: 8.8rem;
-		font-family: @theme-font-sans-serif;
+		font-family: $theme-font-sans-serif;
 		padding: 3rem 0;
 		letter-spacing: 2rem;
 	}
@@ -79,7 +79,7 @@
 	position: relative;
 	z-index: 1;
 	h1{
-		font-family: @abel;
+		font-family: $abel;
 		color: #fff;
 		text-transform: uppercase;
 		display: inline-block;
@@ -90,7 +90,7 @@
 		padding-top: 3.3rem;
 	}
 	p{
-		font-family: @baseFont;
+		font-family: $baseFont;
 		color: #fff;
 		font-weight: 300;
 		line-height: 2.5rem;
@@ -100,7 +100,7 @@
 	a{
 		font-size: 1.2rem;
 		font-weight: 700;
-		font-family: @baseFont;
+		font-family: $baseFont;
 		color: #fff;
 		text-transform: uppercase;
 		&:hover{
@@ -172,7 +172,7 @@
 /***********************************************************************************************/
 .container-screens{
 	position: fixed;
-	.translate(-50%, -50%);
+	@include translate(-50%, -50%);
 	left: 50%;
 	top: 50%;
 	
@@ -238,14 +238,6 @@
 		.link--yaku { font-size: 4em; }
 	}
 
-@media (max-width: 1620px) {
-	
-}
-
-@media (max-width: 1420px) {
-	
-}
-
 @media (max-width: 1200px) {
 	.computer-empty{
 		width: 232px;
@@ -256,10 +248,6 @@
 	    top: 8px!important;
 	    height: 98px!important;
 	}
-}
-
-@media (max-width: 1030px) {
-	
 }
 
 @media (max-width: 800px) {
@@ -356,9 +344,6 @@
 			letter-spacing: 2px;
 		}
 	}
-}
-@media (max-width: 320px) {
-	
 }
 
 

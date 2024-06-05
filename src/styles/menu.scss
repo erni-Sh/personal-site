@@ -11,8 +11,8 @@
 	opacity: 0;
 	left: 0;
 	visibility: hidden;
-	.transition(0.4s);
-	background: @aqura-color-theme-alpha-95;
+	@include transition(0.4s);
+	background: $aqura-color-theme-alpha-95;
 	nav {
 		display: table-cell;
 		vertical-align: middle;
@@ -23,23 +23,23 @@
 			height: 5rem;
 			background-position: center center;
 			cursor: pointer;
-			.transition(0.5s);
-			.translateX(70px);
+			@include transition(0.5s);
+			@include translateX(70px);
 			opacity: 0;
 			span {
 				height: 1px;
 				width: 5rem;
-				.rotate(45deg);
+				@include rotate(45deg);
 				display: block;
 				background: #000;
 				margin-top: 2rem;
 				&:last-child {
-					.rotate(-45deg);
+					@include rotate(-45deg);
 					margin-top: 0;
 				}
 			}
 			&:last-child {
-				.translateX(-70px);
+				@include translateX(-70px);
 			}
 		}
 		ul {
@@ -48,14 +48,14 @@
 			margin-top: 5rem;
 			margin-bottom: 5rem;
 			opacity: 0;
-			.translateY(70px);
+			@include translateY(70px);
 			li {
 				padding: 1rem;
 				position: relative;
 				display: block;
-				.transition;
+				@include transition;
 				a {
-					font-family: @lekton;
+					font-family: $lekton;
 					font-weight: 400;
 					font-size: 2.4rem;
 					line-height: 1.2rem;
@@ -68,7 +68,7 @@
 					z-index: 1;
 					position: relative;
 					outline: none;
-					.transition;
+					@include transition;
 					&:before {
 						content: '';
 						display: block;
@@ -83,10 +83,10 @@
 						background: #000;
 						z-index: -1;
 						opacity: 0;
-						.scale(0);
+						@include scale(0);
 					}
 					&:hover{
-						color: @golden!important;
+						color: $golden !important;
 					}
 				}
 				&.no-hovered {
@@ -100,7 +100,7 @@
 					opacity: 0;
 					max-height: 0;
 					margin: 0;
-					.transition(0.3s);
+					@include transition(0.3s);
 					li {
 						display:block;
 						padding: 0.2rem 2rem;
@@ -110,7 +110,7 @@
 							letter-spacing: 0.1rem;
 							color: #1F1F1F;
 							&:hover{
-								color: @purple;
+								color: $purple;
 							}
 						}
 					}
@@ -134,15 +134,15 @@
 		opacity: 1;
 		nav {
 			.x-filter {
-				.translateX(0);
+				@include translateX(0);
 				opacity: 1;
 				visibility: visible;
 				&:last-child {
-					.translateX(0);
+					@include translateX(0);
 				}
 			}
 			ul {
-				.translateY(0);
+				@include translateY(0);
 				opacity: 1;
 				visibility: visible;
 			}
@@ -166,7 +166,7 @@
     height: 2px;
     width: 17px;
     margin-bottom: 3px;
-    .origin;
+		@include origin;
     position: relative;
     &:last-child {
       margin-bottom: 0;
@@ -176,7 +176,7 @@
   	position: relative;
     span {
       &:first-child {
-        .rotate(45deg);
+				@include rotate(45deg);
         top: -1px;
         left: 2px;
       }
@@ -184,7 +184,7 @@
         opacity: 0;
       }
       &:last-child {
-        .rotate(-45deg);
+				@include rotate(-45deg);
       }
     }
   }
@@ -203,7 +203,7 @@
 		position: relative;
 		color: #fff;
 		top: 3px;
-		.transition;
+		@include transition;
 		.myCart{
 			ul{
 				list-style: none;
@@ -216,7 +216,7 @@
 			}
 			.cartTitle{
 				text-transform: uppercase;
-				font-family: @baseFont;
+				font-family: $baseFont;
 				font-weight: 600;
 				font-size: 1.3rem;
 				position: relative;
@@ -230,13 +230,13 @@
 				    z-index: 10;
 				    font-size: 11px;
 				    line-height: 11px;
-				    background: @purple;
+				    background: $purple;
 				    border-radius: 50%;
 				    padding: 3px 6px;
 				}
 			}
 			.cartNum{
-				font-family: @baseFont;
+				font-family: $baseFont;
 				font-weight: 600;
 				font-size: 1.3rem;
 				padding: 0 0.9rem;
@@ -282,7 +282,7 @@
 						margin: 0;
 						display: block;
 						font-size: 1.5rem;
-						font-family: @baseFont;
+						font-family: $baseFont;
 						font-weight: 600;
 						color: #525252;
 						position: relative;
@@ -295,7 +295,7 @@
 						}
 						&:hover{
 							text-decoration: none;
-							color: @purple;
+							color: $purple;
 						}
 					}
 					.quantity{
@@ -303,12 +303,12 @@
 					}
 					p{
 						color: #757575;
-						font-family: @baseFont;
+						font-family: $baseFont;
 						font-weight: 600;
 						font-size: 1.4rem;
 						padding-right: 0.2rem;
 						span{
-							font-family: @libre;
+							font-family: $libre;
 							font-weight: 400;
 							font-size: 1.1rem;
 							padding-left: 1rem;
@@ -329,10 +329,10 @@
 		font-weight: 400;
 		font-size: 1.2rem;
 		color: #fff;
-		font-family: @baseFont;
+		font-family: $baseFont;
 		margin-top: 3rem;
 		padding: 1.5rem 3rem;
-		background-color: @purple;
+		background-color: $purple;
 		border-color: transparent;
 		letter-spacing: 2px;
 	}
@@ -341,50 +341,30 @@
 	}
 	.buttonCheck{
 		margin-bottom: 3rem;
-		background-color: @purple;
+		background-color: $purple;
 		padding: 1.5rem 3.4rem;
 	}
 	.total{
 		a{
 			color: #757575;
-			font-family: @baseFont;
+			font-family: $baseFont;
 			font-weight: 600;
 			font-size: 1.4rem;
 			text-decoration: none;
 			text-transform: uppercase;
-			.transition;
+			@include transition;
 			span{
 				float: right;
 				color: #525252;
-				font-family: @baseFont;
+				font-family: $baseFont;
 				font-weight: 600;
 				font-size: 1.4rem;
 			}
 			&:hover{
-				color: @golden;
+				color: $golden;
 			}
 		}
 	}
-}
-
-@media (max-width: 1620px) {
-	
-}
-
-@media (max-width: 1420px) {
-	
-}
-
-@media (max-width: 1220px) {
-	
-}
-
-@media (max-width: 1030px) {
-	
-}
-
-@media (max-width: 800px) {
-	
 }
 
 @media (max-width: 500px) {
@@ -405,36 +385,4 @@
 			width: 3rem!important;
 		}
 	}
-}
-
-@media (max-width: 330px) {
-	
-}
-
-@media (max-width: 1620px) {
-	
-}
-
-@media (max-width: 1420px) {
-	
-}
-
-@media (max-width: 1220px) {
-	
-}
-
-@media (max-width: 1030px) {
-	
-}
-
-@media (max-width: 800px) {
-	
-}
-
-@media (max-width: 500px) {
-	
-}
-
-@media (max-width: 330px) {
-	
 }
