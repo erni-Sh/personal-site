@@ -14,32 +14,32 @@ body{
   text-transform: uppercase;
   h2{
     a{
-      font-family: @mont;
+      font-family: $mont;
       font-weight: 400;
       font-size: 3rem;
       letter-spacing: 2px;
       color: #333;
       text-decoration: none;
-      .transition;
+      @include transition;
       &:hover{
-        color: @purple;
+        color: $purple;
       }
     }
     &:hover{
-      color: @purple;
+      color: $purple;
     }
   }
   p{
-    font-family: @baseFont;
+    font-family: $baseFont;
     font-weight: 400;
     font-size: 1.8rem;
     color: #757575;
     text-transform: initial;
     a{
-      font-family: @baseFont;
+      font-family: $baseFont;
       font-weight: 400;
       font-size: 1.8rem;
-      color: @purple;
+      color: $purple;
       text-transform: initial;
       &:hover{
         text-decoration: none;
@@ -51,7 +51,7 @@ body{
     height: 1px;
     width: 70px;
     margin: 0 auto;
-    background-color: @purple;
+    background-color: $purple;
     position: relative;
     top: 1.6rem;
   }

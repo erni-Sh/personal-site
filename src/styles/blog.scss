@@ -10,11 +10,11 @@
 			a{
 			    text-decoration: none;
 			    color: #525252;
-			    font-family: @mont;
+			    font-family: $mont;
 			    font-weight: 700;
-			    .transition;
+			    @include transition;
 			    &:hover{
-			    	color: @golden;
+			    	color: $golden;
 			    }
 			}
 		}
@@ -24,7 +24,7 @@
 				li{
 					float: left;
 					a{
-						font-family: @mont;
+						font-family: $mont;
 					    font-size: 1.1rem;
 					    line-height: 2.8rem;
 					    font-weight: 400;
@@ -34,7 +34,7 @@
 					}
 					&:last-child{
 						a{
-							color: @golden;
+							color: $golden;
 						}
 					}
 				}
@@ -42,7 +42,7 @@
 		}
 		.blogParagraph{
 		    p{
-		    	font-family: @baseFont;
+		    	font-family: $baseFont;
 			    font-size: 1.4rem;
 			    line-height: 2.4rem;
 			    font-weight: 400;
@@ -53,9 +53,9 @@
 			    display: inline-block;
 			    background: #000;
 			    margin-top: 2rem;
-			    .transition;
+					@include transition;
 			a{
-				font-family: @baseFont;
+				font-family: $baseFont;
 			    font-size: 1.1rem;
 			    font-weight: 600;
 			    color: #fff;
@@ -64,7 +64,7 @@
 			    text-decoration: none;
 			}
 			&:hover{
-				background-color: @golden;
+				background-color: $golden;
 			}
 		}
 	}
@@ -87,13 +87,13 @@
 				&:last-child{padding-right: 0;}
 				a{
 					text-decoration: none;
-					font-family: @mont;
+					font-family: $mont;
 					font-size: 1.2rem;
 					font-weight: 400;
 					color: #666;
 					text-transform: uppercase;
 					&:hover{
-						color: @golden;
+						color: $golden;
 					}
 					i{
 						font-size: 1.8rem;
@@ -125,7 +125,7 @@
 			li{
 				float: left;
 				a{
-					font-family: @mont;
+					font-family: $mont;
 				    font-size: 1rem;
 				    line-height: 2.8rem;
 				    font-weight: 400;
@@ -135,19 +135,19 @@
 				}
 				&:nth-child(2){
 			    	a{
-			    		color: @golden;
+			    		color: $golden;
 			    	}
 			    }
 			    &:nth-child(4){
 			    	a{
-			    		color: @golden;
+			    		color: $golden;
 			    	}
 			    }
 			}
 		}
 	}
 	.title h2{
-		font-family: @mont;
+		font-family: $mont;
 		color: #525252;
 		font-size: 2.2rem;
 		font-weight: 700;
@@ -155,7 +155,7 @@
 	}
 	.paragraph{
 		p{
-			font-family: @baseFont;
+			font-family: $baseFont;
 			font-size: 1.4rem;
 			color: #4e4e4e;
 			font-weight: 400;
@@ -179,14 +179,14 @@
 				color: #555454;
 			    font-weight: 700;
 			    font-size: 1.2rem;
-			    font-family:@baseFont;
+			    font-family:$baseFont;
 			}
 			a{
-				color: @golden;
+				color: $golden;
 			    font-weight: 700;
 			    font-size: 1.2rem;
 			    text-decoration: none;
-			    font-family:@baseFont;
+			    font-family:$baseFont;
 			}
 		}
 	}
@@ -205,11 +205,11 @@
 			    letter-spacing: 0.1rem;
 			    text-transform: initial;
 			    font-weight: 700;
-			    font-family: @mont;
+			    font-family: $mont;
 			    padding-bottom: 1rem;
 		    }
 		    p{
-		    	font-family: @baseFont;
+		    	font-family: $baseFont;
 		    	font-size: 1.4rem;
 		    	line-height: 1.8;
 		    	color: #555454;
@@ -299,7 +299,7 @@
 				color: #8e8e8e;
 		}
 		&:hover , &:active , &:focus {
-			border-color: @theme-color-base;
+			border-color: $theme-color-base;
 		}
 	}
 	.comment-respond {
@@ -312,7 +312,7 @@
 		display: inline-block;
 		margin-top: 2rem;
 		border: 2px solid #e6e6e6;
-		.transition;
+		@include transition;
 		input[type=submit] {
 			margin: 0;
 			border: none;
@@ -326,13 +326,13 @@
 			padding: 1.3rem 3.3rem;
 			position: relative;
 			z-index: 1;
-			.transition(0.2s);
+			@include transition(0.2s);
 			&:hover , &:active , &:focus {
-				color: @theme-color-base;
+				color: $theme-color-base;
 			}
 		}
 		&:hover , &:active , &:focus {
-			border-color: @theme-color-base;
+			border-color: $theme-color-base;
 		}
 	}	
 }
@@ -345,7 +345,7 @@
 		letter-spacing: 0.1rem;
 		color: #525252;
 		font-weight: 700;
-		font-family: @mont;
+		font-family: $mont;
 		padding: 3.5rem 0 !important;
 	}
 	ul.comments {
@@ -396,7 +396,7 @@
 							font-size: 1.6rem;
 							color: #525252;
 							letter-spacing: 0.1rem;
-							font-family: @mont;
+							font-family: $mont;
 							font-weight: 700;
 							text-transform: initial;
 							&:hover {
@@ -407,23 +407,23 @@
 					a.comment-reply-link {
 						color: #404041;
 						font-size: 1.4rem;
-						font-family: @baseFont;
+						font-family: $baseFont;
 						font-weight: 700;
-						color: @purple;
+						color: $purple;
 					}
 					.time-comment {
 						font-size: 1.2rem;
 						letter-spacing: 0.1rem;
-						color: @purple;
+						color: $purple;
 						font-weight: 700;
-						font-family: @baseFont;
+						font-family: $baseFont;
 						margin-top: 0px;
 						margin-bottom: 1rem;
 						a{
 							font-size: 1.2rem;
-							color: @purple;
+							color: $purple;
 							font-weight: 700;
-							font-family: @baseFont;
+							font-family: $baseFont;
 							&:hover{
 								text-decoration: none;
 							}
@@ -437,7 +437,7 @@
 						font-size: 1.2rem;
 						color: #000;
 						font-weight: 700;
-						font-family: @baseFont;
+						font-family: $baseFont;
 					}
 					.comment-text {
 						p {
@@ -445,7 +445,7 @@
 						    font-weight: 400;
 						    font-size: 1.4rem;
 						    line-height: 1.8;
-							font-family: @baseFont;
+							font-family: $baseFont;
 						}
 					}
 				}
@@ -462,7 +462,7 @@
 	padding-top: 5rem;
 	h1{
 		  font-weight: 700;
-		  font-family: @mont;
+		  font-family: $mont;
 		  color: #525252 !important;
 		  font-size: 2.2rem!important;
 		  text-transform: initial;
@@ -495,7 +495,7 @@
 	form input::-webkit-input-placeholder {
 	  /* WebKit browsers */
 	  font-weight: 600;
-	  font-family: @baseFont;
+	  font-family: $baseFont;
 	  color: #666 !important;
 	  font-size: 1.4rem;
 	  text-transform: initial;
@@ -503,7 +503,7 @@
 	 form input:-moz-placeholder {
 	  /* Mozilla Firefox 4 to 18 */
 	  font-weight: 600;
-	  font-family: @baseFont;
+	  font-family: $baseFont;
 	  color: #666 !important;
 	  font-size: 1.4rem;
 	  text-transform: initial;
@@ -511,7 +511,7 @@
 	 form input::-moz-placeholder {
 	  /* Mozilla Firefox 19+ */
 	  font-weight: 600;
-	  font-family: @baseFont;
+	  font-family: $baseFont;
 	  color: #666 !important;
 	  font-size: 1.4rem;
 	  text-transform: initial;
@@ -519,7 +519,7 @@
 	 form input:-ms-input-placeholder {
 	  /* Internet Explorer 10+ */
 	  font-weight: 600;
-	  font-family: @baseFont;
+	  font-family: $baseFont;
 	  color: #666 !important;
 	  font-size: 1.4rem;
 	  text-transform: initial;
@@ -528,35 +528,35 @@
 
 	textarea::-webkit-input-placeholder { /* WebKit browsers */
 	 font-weight: 600;
-	  font-family: @baseFont;
+	  font-family: $baseFont;
 	  color: #666 !important;
 	  font-size: 1.4rem;
 	  text-transform: initial;
 	}
 	textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
 	 font-weight: 600;
-	  font-family: @baseFont;
+	  font-family: $baseFont;
 	  color: #666 !important;
 	  font-size: 1.4rem;
 	  text-transform: initial;
 	}
 	textarea::-moz-placeholder { /* Mozilla Firefox 19+ */
 	 font-weight: 600;
-	  font-family: @baseFont;
+	  font-family: $baseFont;
 	  color: #666 !important;
 	  font-size: 1.4rem;
 	  text-transform: initial;
 	}
 	textarea:-ms-textarea-placeholder { /* Internet Explorer 10+ */
 	  font-weight: 600;
-	  font-family: @baseFont;
+	  font-family: $baseFont;
 	  color: #666 !important;
 	  font-size: 1.4rem;
 	  text-transform: initial;
 	}
 	.form-submit{
 		input{
-			font-family: @baseFont;
+			font-family: $baseFont;
 			font-size: 1.1rem;
 			color: #fff;
 			background-color: #000;
@@ -564,8 +564,8 @@
 			padding: 1rem 2rem;
 			font-weight: 600;
 			&:hover{
-				background-color: @purple;
-				border-color: @purple;
+				background-color: $purple;
+				border-color: $purple;
 				color: #fff;
 			}
 		}
@@ -590,7 +590,7 @@
     	text-align: left;
     	small{
     		font-size: 1.3rem;
-	    	font-family: @raleway;
+	    	font-family: $raleway;
 	    	color: #666;
 	    	font-weight: 700;
 	    	text-transform: uppercase;
@@ -601,7 +601,7 @@
     	text-align: right;
     	small{
     		font-size: 1.3rem;
-	    	font-family: @raleway;
+	    	font-family: $raleway;
 	    	color: #666;
 	    	font-weight: 700;
 	    	text-transform: uppercase;
@@ -624,7 +624,7 @@
             padding: 0 0.7rem;
             a{
                 display: block;
-                font-family: @baseFont;
+                font-family: $baseFont;
                 font-size: 1.7rem;
                 font-weight: 700;
                 line-height: 2rem;
@@ -657,20 +657,20 @@
 		h3{
 			font-size: 1.8rem;
 			font-weight: 700;
-			font-family: @mont;
+			font-family: $mont;
 			color: #525252;
 			padding-bottom: 2rem;
 		}
 		a{
 		    color: #555454;
 		    font-weight: 600;
-		    font-family: @baseFont;
+		    font-family: $baseFont;
 		    line-height: 2.8rem;
 		    font-weight: 400;
 		    font-size: 1.3rem;
 		    text-decoration: none;
 		    &:hover{
-		    	color: @golden;
+		    	color: $golden;
 		    }
 		}
 		ul{
@@ -680,7 +680,7 @@
 			    color: #525252;
 			    line-height: 2.8rem;
 			    font-weight: 400;
-			    font-family: @baseFont;
+			    font-family: $baseFont;
 			    cursor: pointer;
 			    span{
 			        position: absolute;
@@ -689,12 +689,12 @@
 				    line-height: 2.8rem;
 				    font-weight: 400;
 				    text-transform: uppercase;
-				    font-family: @baseFont;
+				    font-family: $baseFont;
 				    left: 0;
     				padding-left: 13rem;
 			    }
 			    &:hover{
-			    	color:@golden;
+			    	color:$golden;
 			    }
 			}
 		}
@@ -704,7 +704,7 @@
 			li{
 				float: left;
 				a{
-					color: @golden;
+					color: $golden;
 					&:hover{
 						color: #525252;
 					}

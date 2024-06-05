@@ -178,7 +178,7 @@
 	      font-size: 1.4rem;
 	      font-weight: 400;
 	      line-height: 3rem;
-	      font-family: @baseFont;
+	      font-family: $baseFont;
 	      color: #757575;
 	      border-top: 1px solid #cecece;
     	}
@@ -186,7 +186,7 @@
     		font-weight: 700;
     		font-size: 1.3rem;
     		color: #525252;
-    		font-family: @mont;
+    		font-family: $mont;
     		text-transform: uppercase;
     	}
     	.tableWidth{
@@ -221,15 +221,15 @@
                   background: #202020;
                   opacity: 0;
                   z-index: -1;
-                  .scale(0);
-                  .transition;
+                  @include scale(0);
+                  @include transition;
                }
               &:hover {
                 color: #fff;
                 border-color: transparent;
                 &:before {
                   opacity: 1;
-                  .scale(1);
+                  @include scale(1);
                 }
               }           
     	}
@@ -243,7 +243,7 @@
 		h3{
 			padding-bottom: 3rem;
 		    font-weight: 700;
-		    font-family: @mont;
+		    font-family: $mont;
 		    color: #525252;
 		    font-size: 1.8rem;
 		    text-transform: uppercase;
@@ -255,7 +255,7 @@
 			    color: #525252;
 			    line-height: 2.8rem;
 			    font-weight: 700;
-			    font-family: @baseFont;
+			    font-family: $baseFont;
 			    text-transform: uppercase;
 			    span{
 			        position: absolute;
@@ -264,7 +264,7 @@
 				    line-height: 2.8rem;
 				    font-weight: 400;
 				    text-transform: uppercase;
-				    font-family: @baseFont;
+				    font-family: $baseFont;
 				    left: 0;
     				padding-left: 13rem;
 			    }
@@ -289,7 +289,7 @@
       float: left;
       width: 30%;
       padding: 2px;
-      .transition;
+      @include transition;
       &:hover {
         opacity: .8;
       }
@@ -298,7 +298,7 @@
 }
 @import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
 @import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
-// @import url(http://weloveiconfonts.com/api/?family=entypo);
+// $import url(http://weloveiconfonts.com/api/?family=entypo);
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -329,7 +329,7 @@ section{
 			  &:hover{
 			  	transform:rotate(360deg);
 			  	border-radius: 10rem;
-			  	background-color: @golden;
+			  	background-color: $golden;
 			  }
  		  	}
 	 	}
@@ -504,7 +504,7 @@ body.boxed .pagination-2 {
     font-size: 1.3rem;
     display: block;
     color:#888;
-    font-family: @mont;
+    font-family: $mont;
     font-weight: 400;
     text-transform: uppercase;
 }
@@ -512,7 +512,7 @@ body.boxed .pagination-2 {
     font-size: 1.3rem;
     display: inline-block;
     text-transform: uppercase;
-    font-family: @mont;
+    font-family: $mont;
     font-weight: 400;
     color: #555454!important;
 }
@@ -699,8 +699,8 @@ body.boxed .pagination-2 {
 	text-align: center;
 	h2{
 		font-weight: 500;
-		color: @golden;
-		font-family: @raleway;
+		color: $golden;
+		font-family: $raleway;
 		font-size: 1.7rem;
 		letter-spacing: 0.2rem;
 		text-transform: uppercase;
@@ -712,7 +712,7 @@ body.boxed .pagination-2 {
 	font-weight: 500;
 	font-style: italic;
 	font-size: 1rem;
-	font-family: @raleway;
+	font-family: $raleway;
 	color: #9e9e9e;
 	padding-bottom: 2.7rem;
 }
@@ -720,11 +720,11 @@ body.boxed .pagination-2 {
 p{
 	font-weight: 500;
 	font-size: 1.3rem;
-	font-family: @raleway;
+	font-family: $raleway;
 	color: #9e9e9e;
 	a{
 		text-decoration: none;
-		color: @golden;
+		color: $golden;
 	}
 }
 /***********************************************************************************************/
@@ -777,7 +777,7 @@ p{
 		}
 		section{
 			position: absolute;
-			.translateX(-50%);
+			@include translateX(-50%);
 			left: 50%;
 		}
 	}

@@ -53,7 +53,7 @@ body{
 	z-index: 4;
 	color: #000;
 	height: 4.6rem;
-	.transition();
+	@include transition();
 	&.active{
 		background: #f2f2f2;
 		.mesh-seek-bar{
@@ -88,7 +88,7 @@ body{
 		}
 	}
 	&.hide-player {
-		.translateY(100%);
+		@include translateY(100%);
 		.hide-player-button {
 			i {
 				&.fa-minus {
@@ -101,7 +101,7 @@ body{
 		}
 	}
 	&.hide-player-footer {
-		.translateY(100%);
+		@include translateY(100%);
 		.hide-player-button {
 			i {
 				&.fa-minus {
@@ -127,7 +127,7 @@ body{
 		width: 2.6rem;
 		line-height: 2.1rem;
 		height: 2.1rem;
-		.transition();
+		@include transition();
 		&:hover {
 			text-decoration: none;
 			color: #fff;
@@ -152,9 +152,9 @@ body{
 	bottom: 0;
 	padding-top: 100px;
 	background: rgba(255, 255, 255, 0.97);
-	.transition;
+	@include transition;
 	&.open {
-		.transition;
+		@include transition;
 		display: block!important;
 	}
 }
@@ -212,9 +212,9 @@ body{
 	position: absolute;
 	left: 50%;
 	width: 60rem;
-	.translateX(-50%);
+	@include translateX(-50%);
 	padding: 1rem 0;
-	.clearfix;
+	@include clearfix;
 	text-align: center;
 	.mesh-seek-bar {
 		height: 0.1rem;
@@ -229,7 +229,7 @@ body{
 		top: 0;
 		position: relative;
 		height: 0.1rem;
-		background: @golden;
+		background: $golden;
 	}
 	> * {
 		display: inline-block;
@@ -254,13 +254,13 @@ body{
 	  -ms-transform-origin: 0% 0%;
 	  -webkit-transform-origin: 0% 0%;
 	  position: relative;
-	  .transition;
+		@include transition;
 	}  
 	&.active {
 	  position: relative;
 	  span {
 		&:first-child {
-		  .rotate(45deg);
+			@include rotate(45deg);
 		  top: 0px;
 		  left: 2px;
 
@@ -269,7 +269,7 @@ body{
 		  opacity: 0;
 		}
 		&:last-child {
-		  .rotate(-45deg);
+			@include rotate(-45deg);
 		  top: 0.2rem;
 		}
 	  }
@@ -277,7 +277,7 @@ body{
 }
 
 .mesh-main-player {
-	.clearfix;
+	@include clearfix;
 	i {
 		font-size: 1.2rem;
 	}
@@ -322,7 +322,7 @@ body{
 		}
 	}
 	.mesh-artist {
-		font-family: @pt;
+		font-family: $pt;
 		color: #fff;
 		overflow: hidden;
 		max-width: 100%;
@@ -335,7 +335,7 @@ body{
 	}
 	.mesh-title {
 		margin-bottom: 0.6rem;
-		font-family: @pt;
+		font-family: $pt;
 		color: #fff;
 		overflow: hidden;
 		max-width: 100%;
@@ -372,9 +372,9 @@ body{
 	}
 	.left-player-side {
 		float: left;
-		.clearfix;
+		@include clearfix;
 		> div {
-			.clearfix;
+			@include clearfix;
 			float: left;
 		}
 	}
@@ -386,9 +386,9 @@ body{
 		padding-top: 0.75rem;
 		padding-bottom: 0.75rem;
 		padding-left: 4rem;
-		.clearfix;
+		@include clearfix;
 		> div {
-			.clearfix;
+			@include clearfix;
 			float: left;
 			> div {
 				float: left;
@@ -397,7 +397,7 @@ body{
 	}
 	.mesh-current-time , .mesh-duration {
 		font-size: 1.1rem;
-		font-family: @baseFont;
+		font-family: $baseFont;
 		font-weight: 400;
 		color: #fff;
 		width: 3.5rem;
@@ -420,8 +420,8 @@ body{
 	width: 100%;
 	border-top: 1px solid rgba(206, 206, 206, 0.3);
 	border-bottom: 1px solid rgba(206, 206, 206, 0.3);
-	.clearfix;
-	.transition;
+	@include clearfix;
+	@include transition;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -434,7 +434,7 @@ body{
 		.play-pause-button {
 			i:before {
 				content: '\f04c';
-				color: @golden;
+				color: $golden;
 			}
 			&:hover {
 				i {
@@ -459,7 +459,7 @@ body{
 			position: relative;
 			top: -0.2rem;
 			font-size: 1rem;
-			.transition();
+			@include transition();
 		}
 		&:hover {
 			i {
@@ -474,7 +474,7 @@ body{
 	}
 	h2 , h3 , time {
 		padding: 0;
-		font-family: @theme-font-open-sans;
+		font-family: $theme-font-open-sans;
 		display: block;
 	}
 	h2 {
@@ -493,7 +493,7 @@ body{
 		color: #757575;
 		font-weight: 400;
 		text-align: center;
-		font-family: @baseFont;
+		font-family: $baseFont;
 	}
 	.album-and-year {
 		width: 14rem;
@@ -508,7 +508,7 @@ body{
 			text-overflow: ellipsis;
 			color: #757575;
 			font-size: 1.4rem;
-			font-family: @baseFont;
+			font-family: $baseFont;
 			letter-spacing: 0.1rem;
 			font-weight: 400;
 		}
@@ -547,13 +547,13 @@ body{
 				background: #bb9b69;
 				opacity: 0;
 				z-index: -1;
-				.scale(0);
-				.transition;
+				@include scale(0);
+				@include transition;
 			}
 			&:hover {
 				color: #fff;
 				&:before {
-					.scale(1);
+					@include scale(1);
 					opacity: 1;
 				}
 			}

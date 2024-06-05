@@ -75,7 +75,7 @@ body{
       -ms-flex: 0 0 24px;
           flex: 0 0 24px;
   height: 24px;
-  background: url("../img/stars.svg");
+  ////background: url("../img/stars.svg");
   background-position: 0 0;
   cursor: pointer;
 }
@@ -123,7 +123,7 @@ body{
     }
   }
   .linkTwitter{
-    font-family: @baseFont;
+    font-family: $baseFont;
     font-weight: 600;
     font-size: 1.6rem;
     line-height: 2.8rem;
@@ -132,7 +132,7 @@ body{
     text-decoration: none;
   }
   p{
-    font-family: @baseFont;
+    font-family: $baseFont;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 2.8rem;
@@ -142,7 +142,7 @@ body{
     margin-bottom: 0;
     a{
       text-decoration: none;
-      font-family: @baseFont;
+      font-family: $baseFont;
       font-weight: 400;
       font-size: 1.4rem;
       line-height: 2.8rem;
@@ -194,14 +194,14 @@ body{
                 font-size: 1.5rem;
                 line-height: 28px;
                 letter-spacing: 1.2px;
-                font-family: @mont;
+                font-family: $mont;
                 color: #5D5D5D;
                 padding-bottom: 0; 
             }
             p{
                 margin: 0;
                 color: #bb9b69;
-                font-family: @mont;
+                font-family: $mont;
                 font-size: 1.1rem;
                 font-weight: 300;
             }
@@ -291,7 +291,7 @@ body{
     width: 193px;
     height: 194px;
     float: left;
-    background: url(../img/content/disk.png) no-repeat center center;
+    //background: url(../img/content/disk.png) no-repeat center center;
     z-index: 9;
 }
 
@@ -304,7 +304,7 @@ body{
     width: 193px;
     height: 194px;
     float: left;
-    background: url(../img/content/disk2.png) no-repeat center center;
+    //background: url(../img/content/disk2.png) no-repeat center center;
     z-index: 9;
 }
 
@@ -317,7 +317,7 @@ body{
     width: 193px;
     height: 194px;
     float: left;
-    background: url(../img/content/disk1.png) no-repeat center center;
+    //background: url(../img/content/disk1.png) no-repeat center center;
     z-index: 9;
 }
 
@@ -330,7 +330,7 @@ body{
     width: 193px;
     height: 194px;
     float: left;
-    background: url(../img/content/disk3.png) no-repeat center center;
+    //background: url(../img/content/disk3.png) no-repeat center center;
     z-index: 9;
 }
 
@@ -397,11 +397,11 @@ body{
         td{
             padding: 1.5rem 0;
             border-bottom: 1px solid rgba(206, 206, 206, 0.3);
-            font-family: @mont;
+            font-family: $mont;
             a{
                 text-decoration: none;
                 color: #757575;
-                font-family: @baseFont;
+                font-family: $baseFont;
                 font-weight: 400;
                 font-size: 1.4rem;
                 &:hover{
@@ -433,22 +433,22 @@ body{
         .aqura-vip{
             text-align: center;
             a{
-                .transition;
+                @include transition;
                 color: #fff;
                 background-color: #000;
                 &:hover{
                     color: #fff;
-                    background: @golden;
+                    background: $golden;
                 }
             }
         }
         .aqura-tickets{
             text-align: center;
             a{
-                .transition;
+                @include transition;
                 &:hover{
                     color: #fff;
-                    background: @golden;
+                    background: $golden;
                 }
             }
         }
@@ -484,7 +484,7 @@ body{
     text-align: center;
     position: relative;
     left: 50%;
-    .translateX(-51%);
+    @include translateX(-51%);
 }
 
 .sm-countdown .column {
@@ -522,7 +522,7 @@ body{
     border: none;
     font-size: 6rem;
     font-weight: 400;
-    font-family: @mont;
+    font-family: $mont;
     width: 8rem;
     color: #fff;
     margin-right: 5px;
@@ -599,7 +599,7 @@ body{
 
 .sm-countdown.sm-style2 .unit,
 .sm-countdown.sm-style2 input {
-    font-family: @baseFont!important
+    font-family: $baseFont!important
 }
 
 .countdownSection{
@@ -608,7 +608,7 @@ body{
         color: #fff;
         padding-bottom: 3rem;
         text-transform: uppercase;
-        font-family: @mont;
+        font-family: $mont;
         h4{
             font-size: 1.5rem;
             font-weight: 400;
@@ -647,16 +647,16 @@ body{
     text-align: center;
     .sectionTitle{
         p{
-            font-family: @baseFont;
+            font-family: $baseFont;
             font-size: 1.8rem;
             color: #757575;
             font-weight: 400;
             padding: 5.5rem 0;
             margin-bottom: 0!important;
             a{
-                font-family: @baseFont;
+                font-family: $baseFont;
                 font-size: 1.8rem;
-                color: @golden;
+                color: $golden;
                 font-weight: 400;
                 text-decoration: none;
             }
@@ -674,7 +674,7 @@ body{
     text-align: center;
     padding-bottom: 3rem;
     h1{
-        font-family: @mont;
+        font-family: $mont;
         font-size: 3rem;
         color: #fff;
         font-weight: 700;
@@ -685,7 +685,7 @@ body{
             content: '';
             position: absolute;
             top: 6.5rem;
-            .translateX(-50%);
+            @include translateX(-50%);
             left: 50%;
             width: 9rem;
             height: 0.2rem;
@@ -697,7 +697,7 @@ body{
 .descriptionEvent{
     p{
         font-size: 1.4rem;
-        font-family: @baseFont;
+        font-family: $baseFont;
         font-weight: 400;
         color: #555454;
         padding-bottom: 2rem;
@@ -713,7 +713,7 @@ body{
 .ticket{
     h4{
         padding-bottom: 4rem;
-        font-family: @mont;
+        font-family: $mont;
         color: #525252;
         font-weight: 700;
         font-size: 1.8rem;
@@ -722,15 +722,15 @@ body{
     a{
         font-size: 1.1rem;
         font-weight: 400;
-        font-family: @baseFont;
+        font-family: $baseFont;
         color: #fff;
         background-color: #000;
         padding: 0.6rem 1.5rem;
         text-transform: uppercase;
         text-decoration: none;
-        .transition;
+        @include transition;
         &:hover{
-            background-color: @golden;
+            background-color: $golden;
         }
     }
 }
@@ -764,7 +764,7 @@ body{
         font-weight: 700;
         padding-bottom: 6rem;
         text-transform:uppercase;
-        font-family: @mont;
+        font-family: $mont;
         color: #525252;
       }
       form{
@@ -780,7 +780,7 @@ body{
         }
         .form-submit{
             input{
-                font-family: @baseFont;
+                font-family: $baseFont;
                 font-size: 1.1rem;
                 color: #fff;
                 background-color: #000;
@@ -788,7 +788,7 @@ body{
                 padding: 1rem 2rem;
                 font-weight: 600;
                 &:hover{
-                    background-color: @golden;
+                    background-color: $golden;
                 }
             }
         }
@@ -804,14 +804,14 @@ body{
     font-weight: 700;
     padding-bottom: 6rem;
     text-transform:uppercase;
-    font-family: @mont;
+    font-family: $mont;
     color: #525252;
   }
   h4{
     font-size: 1.6rem;
     padding: 0;
     margin: 0;
-    font-family: @mont;
+    font-family: $mont;
     font-weight: 400;
     padding-bottom: 3rem;
     color: #757575;
@@ -831,7 +831,7 @@ body{
       padding: 0;
       margin: 0;
       li{
-        font-family: @baseFont;
+        font-family: $baseFont;
         font-weight: 600;
         color:#525252;
         font-size: 1.5rem;
@@ -839,7 +839,7 @@ body{
         text-transform: uppercase;
         line-height: 2.6rem;
         a{
-          font-family: @baseFont;
+          font-family: $baseFont;
           font-weight: 400;
           color:#757575;
           font-size: 1.5rem;
@@ -899,7 +899,7 @@ body{
 .copyFooter{
   text-align: left;
   a{
-    font-family: @mont;
+    font-family: $mont;
     font-size: 1rem;
     font-weight: 400;
     color: #9a9a9a;
@@ -910,7 +910,7 @@ body{
 .goTop{
   text-align: right;
   a{
-    font-family: @mont;
+    font-family: $mont;
     font-size: 1rem;
     font-weight: 400;
     color: #9a9a9a;
@@ -960,7 +960,7 @@ body{
           background-color:rgba(0,0,0,0.2);
           -webkit-transition:all .4s ease-in-out;
           transition:all .4s ease-in-out;
-          .transition;
+          @include transition;
 
         }
       }
@@ -976,13 +976,13 @@ body{
         margin-top: -6rem;
         text-align: center;
         line-height: 85px;
-        font-family: @mont;
+        font-family: $mont;
         color: #fff;
         font-weight: 700;
         font-size: 1.4rem;
         text-transform: uppercase;
         opacity: 0;
-        .scale(1.2);
+        @include scale(1.2);
         &:hover {
           text-decoration: none;
         }
@@ -991,13 +991,13 @@ body{
           font-size: 1.2rem;
           color: #fff;
           text-transform: uppercase;
-          font-family: @baseFont;
+          font-family: $baseFont;
           font-weight: 300;
           line-height: 2.8rem;
           position: absolute;
           left: 3.5rem;
           bottom: 1rem;
-          .transition();
+          @include transition();
           opacity: 0;
         }
       &:hover {
@@ -1009,7 +1009,7 @@ body{
           }
         }
         > a {
-          .scale(1);
+          @include scale(1);
           opacity: 1;
           margin-top: -4.3rem;
         }
@@ -1026,7 +1026,7 @@ body{
         font-size: 2.5rem;
         display: inline-block;
         font-weight: 700;
-        font-family: @abel;
+        font-family: $abel;
         text-transform: uppercase;
         letter-spacing: 2px;
         span{
@@ -1041,14 +1041,14 @@ body{
         line-height: 2.8rem;
         display: block;
         font-weight: 700;
-        font-family: @lekton;
+        font-family: $lekton;
     }
 }
 
 .fusion-row{
     text-align: center;
     a{
-        font-family: @raleway;
+        font-family: $raleway;
         color: #fff;
         font-weight: 700;
         font-size: 1.4rem;
@@ -1057,24 +1057,24 @@ body{
         opacity: 0;
         width: 100%;
         height: 100%;
-        .transition;
+        @include transition;
         span{
             font-weight: 300;
             color: #fff;
             font-size: 1.4rem;
             text-transform: uppercase;
-            font-family: @raleway;
+            font-family: $raleway;
         }
     }
     p{
-        font-family: @lekton;
+        font-family: $lekton;
         color: #fff;
         font-weight: 400;
         margin-top: -2px;
         font-size: 1rem;
         text-transform: uppercase;
         opacity: 0;
-        .transition(1s);
+        @include transition(1s);
     }
 }
 
@@ -1222,7 +1222,7 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 2.8rem;
-    font-family: @baseFont;
+    font-family: $baseFont;
     line-height: 2;
     letter-spacing: 0.5px;
   }
@@ -1243,12 +1243,12 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
     padding-top: 3rem;
   a{
     text-decoration: none;
-    font-family: @baseFont;
+    font-family: $baseFont;
     font-weight: 700;
     color: #000;
     font-size: 1.5rem;
     &:hover{
-      color:@golden;
+      color:$golden;
     }
   }
   .imgSignuature{
@@ -1333,7 +1333,7 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
                 width: 2.8rem!important;
                 height: 2.8rem!important;
                 &:hover{
-                    color: @golden;
+                    color: $golden;
                 }
             }
         }
@@ -1496,7 +1496,7 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
     }
     .singleCounter{
         .sm-countdown {
-            .translateX(-52%);
+            @include translateX(-52%);
         }
     }
 }
