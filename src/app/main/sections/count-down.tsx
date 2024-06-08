@@ -15,7 +15,7 @@ const CountDown: FC = (): JSX.Element => {
               <div className="displayCounter">
                 <div className="column">
                   <div className="sm_countdown_inner">
-                    <input className="element days" readOnly="readonly" data-min={0} data-max={365} data-width={200}
+                    <input className="element days" readOnly data-min={0} data-max={365} data-width={200}
                            data-height={200} data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d"
                            data-angleoffset={180}/>
                     <span className="unit days-title">days</span>
@@ -23,7 +23,7 @@ const CountDown: FC = (): JSX.Element => {
                 </div>
                 <div className="column">
                   <div className="sm_countdown_inner">
-                    <input className="element hour" readOnly="readonly" data-min={0} data-max={24} data-width={200}
+                    <input className="element hour" readOnly data-min={0} data-max={24} data-width={200}
                            data-height={200} data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d"
                            data-angleoffset={180}/>
                     <span className="unit hours-title">hrs</span>
@@ -31,7 +31,7 @@ const CountDown: FC = (): JSX.Element => {
                 </div>
                 <div className="column">
                   <div className="sm_countdown_inner">
-                    <input className="element minute" readOnly="readonly" data-min={0} data-max={60} data-width={200}
+                    <input className="element minute" readOnly data-min={0} data-max={60} data-width={200}
                            data-height={200} data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d"
                            data-angleoffset={180}/>
                     <span className="unit mins-title">min</span>
@@ -39,7 +39,7 @@ const CountDown: FC = (): JSX.Element => {
                 </div>
                 <div className="column">
                   <div className="sm_countdown_inner">
-                    <input className="element second" readOnly="readonly" data-min={0} data-max={60} data-width={200}
+                    <input className="element second" readOnly data-min={0} data-max={60} data-width={200}
                            data-height={200} data-thickness="0.15" data-fgcolor="#fff" data-bgcolor="#8e8d8d"
                            data-angleoffset={180}/>
                     <span className="unit secs-title">sec</span>

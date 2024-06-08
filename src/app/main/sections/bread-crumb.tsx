@@ -7,7 +7,12 @@ const BreadCrumb: FC = (): JSX.Element => {
         <div className="col-sm-12">
           <div className="breadcrumb-fullscreen-parent phone-menu-bg">
             <div className="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
-                 style={{backgroundImage: 'url("assets/img/header/header.png")'}} data-stellar-background-ratio="0.5"
+                 style={{
+                   // backgroundImage: 'url("/assets/img/header/header.png")',
+                   backgroundImage: 'url("https://theme-brothers.com/AquraHTML/assets/img/starHomePage/star.jpg")',
+                   height: '100vh',
+                   backgroundPosition: '50% 0px',
+                  }} data-stellar-background-ratio="0.5"
                  data-stellar-vertical-offset={0}>
               <div id="home" style={{position: 'absolute', left: 0, top: 0}}>
                 <div className="intro-header">

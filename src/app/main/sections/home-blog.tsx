@@ -14,7 +14,7 @@ const HomeBlog: FC = (): JSX.Element => {
           {/* end sectionTtile */}
           <div className="col-sm-4">
             <div className="blogBox">
-              <div className="imgBox"><img src="assets/img/blog/homeGalPost.png" alt="box-img"/></div>
+              <div className="imgBox"><img src="/assets/img/blog/homeGalPost.png" alt="box-img"/></div>
               <div className="blogBoxContent">
                 <div className="blogHeader">
                   <h1><a href="blogSingle.html">Gallery Post</a></h1>
@@ -43,7 +43,9 @@ const HomeBlog: FC = (): JSX.Element => {
           <div className="col-sm-4">
             <div className="blogBox">
               <div className="videoBox">
-                <iframe src="https://player.vimeo.com/video/145837856" width={600} height={410}/>
+                <div className={'fluid-width-video-wrapper'} style={{ paddingTop: '56.25%'}}>
+                  <iframe src="https://player.vimeo.com/video/145837856" width={600} height={410}/>
+                </div>
               </div>
               <div className="blogBoxContent">
                 <div className="blogHeader">
@@ -73,8 +75,9 @@ const HomeBlog: FC = (): JSX.Element => {
           <div className="col-sm-4">
             <div className="blogBox">
               <div className="soundcloudBox">
-                <iframe height={203}
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73595878&color=bb9b69&show_artwork=false&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false"/>
+                <div className={'fluid-width-video-wrapper'} style={{ paddingTop: '67.6667%'}}>
+                  <iframe height={203} src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/73595878&color=bb9b69&show_artwork=false&auto_play=false&hide_related=false&show_comments=false&show_user=false&show_reposts=false"/>
+                </div>
               </div>
               <div className="blogBoxContent">
                 <div className="blogHeader">

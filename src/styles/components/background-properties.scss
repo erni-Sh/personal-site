@@ -1,0 +1,21 @@
+/***********************************************************************************************/
+/* START BACKGROUND PROPERTIES */
+/***********************************************************************************************/
+.background-properties{
+    background-size: cover;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+@media screen and (max-width: 1030px){
+    .background-properties{
+        background-attachment: initial;
+    }
+}
+/***********************************************************************************************/
+/* END BACKGROUND PROPERTIES */
+/***********************************************************************************************/

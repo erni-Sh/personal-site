@@ -14,7 +14,7 @@ const HomeShop: FC = (): JSX.Element => {
             {/* end sectionTtile */}
             <div className="row">
               <nav className="shop-products">
-                <ul className="clearfix">
+                <ul className="clearfix" style={{display: 'flex'}}>
                   <li className="col-sm-3">
                     <figure>
                       <figcaption>

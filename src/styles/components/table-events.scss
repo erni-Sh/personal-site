@@ -1,0 +1,83 @@
+/***********************************************************************************************/
+/* START TABLE EVENTS */
+/***********************************************************************************************/
+.tableEvents{
+  table{
+    width: 100%;
+    tr{
+      &:hover{
+        background-color: rgba(255, 255, 255, 0.5);
+        &:first-child{
+          &:hover{
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    td{
+      padding: 1.5rem 0;
+      border-bottom: 1px solid rgba(206, 206, 206, 0.3);
+      font-family: $mont;
+      a{
+        text-decoration: none;
+        color: #757575;
+        font-family: $baseFont;
+        font-weight: 400;
+        font-size: 1.4rem;
+        &:hover{
+          color: #757575;
+        }
+        i{
+          padding: 0 2rem;
+        }
+      }
+    }
+    th{
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #525252;
+      font-size: 1.3rem;
+      padding: 1.5rem 0;
+      border-top: 1px solid rgba(206, 206, 206, 0.3);
+      border-bottom: 1px solid rgba(206, 206, 206, 0.3);
+    }
+    td{
+      color: #757575;
+    }
+    .aqura-vip, .aqura-tickets{
+      a{
+        padding: 0.4rem 1.5rem;
+        border-radius: 1.3rem;
+      }
+    }
+    .aqura-vip{
+      text-align: center;
+      a{
+        @include transition;
+        color: #fff;
+        background-color: #000;
+        &:hover{
+          color: #fff;
+          background: $golden;
+        }
+      }
+    }
+    .aqura-tickets{
+      text-align: center;
+      a{
+        @include transition;
+        &:hover{
+          color: #fff;
+          background: $golden;
+        }
+      }
+    }
+    .tickets{
+      text-align: center;
+      width: 5%;
+    }
+  }
+}
+/***********************************************************************************************/
+/* END TABLE EVENTS */
+/***********************************************************************************************/

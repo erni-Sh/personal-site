@@ -1,0 +1,46 @@
+
+/***********************************************************************************************/
+/* BIO */
+/***********************************************************************************************/
+.biography{
+  p{
+    color: #000;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    font-family: $baseFont;
+    line-height: 2;
+    letter-spacing: 0.5px;
+  }
+}
+.bioTitle{
+  h1{
+    top: 37.3rem;
+    float: none;
+    color: #fff;
+    left: 36.5rem;
+    &:before{
+      background-color: #fff;
+    }
+  }
+}
+
+.signature{
+  padding-top: 3rem;
+  a{
+    text-decoration: none;
+    font-family: $baseFont;
+    font-weight: 700;
+    color: #000;
+    font-size: 1.5rem;
+    &:hover{
+      color:$golden;
+    }
+  }
+  .imgSignuature{
+    padding-left: 7rem;
+  }
+}
+/***********************************************************************************************/
+/* END BIO */
+/***********************************************************************************************/

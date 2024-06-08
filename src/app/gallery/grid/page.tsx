@@ -1,9 +1,9 @@
 import React, {FC, JSX} from 'react';
+import SectionComingSoon from '@/components/section-coming-soon';
 
 const Page: FC = (): JSX.Element => {
-  console.log('test page');
   return (
-    <div>TEST PAGE</div>
+    <SectionComingSoon />
   );
 };
 

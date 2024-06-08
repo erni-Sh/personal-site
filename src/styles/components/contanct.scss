@@ -1,0 +1,103 @@
+/***********************************************************************************************/
+/* START CONTACT */
+/***********************************************************************************************/
+.contactSingle{
+  .singleBlogForm{
+    padding-top: 0;
+    h2{
+      font-size: 2rem;
+      padding: 0;
+      margin: 0;
+      font-weight: 700;
+      padding-bottom: 6rem;
+      text-transform:uppercase;
+      font-family: $mont;
+      color: #525252;
+    }
+    form{
+      padding-top: 0;
+      input{
+        display: inline-block;
+        background-color: transparent;
+        &:first-child{margin-right: 11.5rem;}
+        &:nth-child(3){margin-right: 11.5rem;}
+      }
+      textarea{
+        background-color: transparent;
+      }
+      .form-submit{
+        input{
+          font-family: $baseFont;
+          font-size: 1.1rem;
+          color: #fff;
+          background-color: #000;
+          border-color: #000;
+          padding: 1rem 2rem;
+          font-weight: 600;
+          &:hover{
+            background-color: $golden;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contactTop{
+  h2{
+    font-size: 2rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    padding-bottom: 6rem;
+    text-transform:uppercase;
+    font-family: $mont;
+    color: #525252;
+  }
+  h4{
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    font-family: $mont;
+    font-weight: 400;
+    padding-bottom: 3rem;
+    color: #757575;
+  }
+  p{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color:#555454;
+    padding-bottom: 5rem;
+    line-height: 2.4rem;
+  }
+  .contactInfo{
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li{
+        font-family: $baseFont;
+        font-weight: 600;
+        color:#525252;
+        font-size: 1.5rem;
+        position: relative;
+        text-transform: uppercase;
+        line-height: 2.6rem;
+        a{
+          font-family: $baseFont;
+          font-weight: 400;
+          color:#757575;
+          font-size: 1.5rem;
+          position: absolute;
+          left: 0;
+          padding-left: 8rem;
+        }
+      }
+    }
+  }
+}
+/***********************************************************************************************/
+/* END CONTACT */
+/***********************************************************************************************/

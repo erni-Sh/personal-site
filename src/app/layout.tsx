@@ -1,8 +1,5 @@
-// import '../../public/assets/css/master.css';
-// import '@/styles/master.less';
-// import '@/app/globals.css';
 import '@/styles/master.scss';
-import Header from '@/components/header';
+import Header from '@/components/header/header';
 import Footer from '@/components/footer';
 import AudioPlayer from '@/components/audio-player/audio-player';
 import Playlist from '@/components/audio-player/playlist';
@@ -20,11 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-      <Header />
-      {children}
-      <Footer />
-      <AudioPlayer />
-      <Playlist />
+        <Header />
+        {children}
+        <Footer />
+        <AudioPlayer />
+        <Playlist />
       </body>
     </html>
   )

@@ -1,27 +1,18 @@
 import {FC, JSX} from 'react';
-import PageLoader from '@/app/main/sections/page-loader';
-import BreadCrumb from '@/app/main/sections/bread-crumb';
-import AudioPlayer from '@/components/audio-player/audio-player';
-import Playlist from '@/components/audio-player/playlist';
-import Header from '@/components/header';
-import HomeAlbums from '@/app/main/sections/home-albums';
-import Events from '@/app/main/sections/events';
-import CountDown from '@/app/main/sections/count-down';
-import HomeBlog from '@/app/main/sections/home-blog';
-import HomeBranding from '@/app/main/sections/home-branding';
-import HomeVideo from '@/app/main/sections/home-video';
-import HomeGallery from '@/app/main/sections/home-gallery';
-import HomeShop from '@/app/main/sections/home-shop';
-import Footer from '@/components/footer';
+import BreadCrumb from './sections/bread-crumb';
+import HomeAlbums from './sections/home-albums';
+import Events from './sections/events';
+import CountDown from './sections/count-down';
+import HomeBlog from './sections/home-blog';
+import HomeBranding from './sections/home-branding';
+import HomeVideo from './sections/home-video';
+import HomeGallery from './sections/home-gallery';
+import HomeShop from './sections/home-shop';
 
 const MainPage: FC = (): JSX.Element => {
   return (
     <main>
-      {/*<PageLoader />*/}
       <BreadCrumb />
-      {/*<AudioPlayer />*/}
-      {/*<Playlist />*/}
-      {/*<Header />*/}
       <HomeAlbums />
       <Events />
       <CountDown />
@@ -30,7 +21,6 @@ const MainPage: FC = (): JSX.Element => {
       <HomeVideo />
       <HomeGallery />
       <HomeShop />
-      {/*<Footer />*/}
     </main>
   );
 }

@@ -1,0 +1,222 @@
+
+/***********************************************************************************************/
+/* START MEDIA QUERY */
+/***********************************************************************************************/
+@media (max-width: 1620px) {
+
+}
+@media (max-width: 780px){
+  .breadcrumb {
+    height: auto;
+    position: relative!important;
+    background-size: cover;
+    background-attachment: initial;
+    background-position: center!important;
+  }
+}
+@media (max-width: 1420px) {
+
+}
+
+@media (max-width: 1220px) {
+
+}
+
+@media (max-width: 1030px) {
+
+}
+@media (max-width: 800px) {
+  .paginationFooter .pagination-next{
+    text-align: center!important;
+  }
+  .paginationFooter .pagination-previous{
+    text-align: center!important;
+  }
+  .footer{
+    .social-icons{
+      a{
+        width: 2.8rem!important;
+        height: 2.8rem!important;
+        &:hover{
+          color: $golden;
+        }
+      }
+    }
+  }
+  .starVideo{
+    h4,h1{display: none;}
+  }
+  .goTop{
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+  .before-FullscreenSlider {
+    height: 0 !important;
+  }
+
+  .padding{
+    padding: 12rem 0!important;
+  }
+  .paddingBottom{
+    padding-bottom: 8rem!important;
+  }
+  .videoHome{
+    .col-sm-4{
+      padding-bottom: 8rem;
+      &:last-child{padding-bottom: 0;}
+    }
+  }
+  .paddingHomeEvents{
+    padding-top: 0!important;
+  }
+  .albumsHome{
+    .name{
+      margin-top: -2rem;
+    }
+  }
+  .videoHome .sectionTitle p{
+    padding-bottom: 4.5rem!important;
+  }
+  .ticket{
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .coverEvent{
+    padding: 5rem 0;
+  }
+  .contactTop{
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  .contactSingle{
+    .contactInfo{
+      ul{
+        li{
+          a{
+            position: relative;
+            padding-left: 0;
+            left: 1rem;
+          }
+        }
+      }
+    }
+  }
+  .copyFooter, .goTop{
+    text-align: center;
+  }
+  .footer{
+    text-align: center;
+  }
+
+}
+
+@media(max-width:600px){
+  @supports (overflow:-webkit-marquee) and (justify-content:inherit) { .jplayerButton{ top: -1.8rem; margin-left: 3rem!important; position: relative; } } }
+
+@media (max-width: 500px) {
+  .tableEvents{
+    table{
+      th{
+        font-size: 0.6rem;
+      }
+      td{
+        a{
+          font-size: 0.7rem;
+          i{
+            display: none;
+          }
+        }
+      }
+      .aqura-tickets{
+        a{
+          padding: 0.4rem 0.4rem;
+        }
+      }
+    }
+  }
+  .contactSingle{
+    form{
+      padding-right: 5rem!important;
+      padding-left: 5rem!important;
+    }
+  }
+  .sm-countdown.sm-style2 input{
+    width: 4rem;
+    font-size: 3rem;
+    margin:0;
+  }
+  .displayCounter{
+    .column{
+      padding-right: 0;
+    }
+  }
+  .sectionTitle{
+    h2{
+      a{
+        font-size: 2rem!important;
+      }
+    }
+    .heading-b3{
+      top: 1.2rem!important;
+    }
+  }
+  .videoHome{
+    .sectionTitle{
+      p{
+        font-size: 1.5rem;
+      }
+    }
+  }
+  .countdownTitle{
+    padding-bottom: 5rem!important;
+    h4{
+      font-size: 1.2rem!important;
+    }
+    h2{
+      font-size: 2rem!important;
+      &:before{
+        top: 4.5rem!important;
+      }
+    }
+  }
+  .cartContainer{
+    display: none;
+  }
+  .topHeader{
+    padding-bottom: 2.8rem!important;
+  }
+  .sm-countdown.sm-style2 .unit{
+    width: 0.5rem;
+    font-size: 0.6rem;
+  }
+  .SingleEventTitle{
+    padding-bottom: 2rem;
+    h1{
+      font-size: 2rem;
+
+      &:before{
+        content: none;
+      }
+    }
+  }
+  .singleCounter{
+    .sm-countdown {
+      @include translateX(-52%);
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .sm-countdown.sm-style2 input{
+    font-size: 2rem;
+  }
+  .sm-countdown.sm-style2 .unit{
+    font-size: 8px;
+  }
+}
+
+
+
+/***********************************************************************************************/
+/* END MEDIA QUERY */
+/***********************************************************************************************/

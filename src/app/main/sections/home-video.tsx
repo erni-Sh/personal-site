@@ -14,15 +14,21 @@ const HomeVideo: FC = (): JSX.Element => {
           </div>
           {/* end sectionTtile */}
           <div className="col-sm-4">
-            <iframe width={560} height={315} src="https://www.youtube.com/embed/VV-Q-aRHTDE" allowFullScreen/>
+            <div className={'fluid-width-video-wrapper'} style={{paddingTop: '56.25%'}}>
+              <iframe width={560} height={315} src="https://www.youtube.com/embed/VV-Q-aRHTDE" allowFullScreen/>
+            </div>
           </div>
           {/* end col-sm-4 */}
           <div className="col-sm-4">
-            <iframe width={560} height={315} src="https://www.youtube.com/embed/VxG5C4q_rEs" allowFullScreen/>
+            <div className={'fluid-width-video-wrapper'} style={{paddingTop: '56.25%'}}>
+              <iframe width={560} height={315} src="https://www.youtube.com/embed/VxG5C4q_rEs" allowFullScreen/>
+            </div>
           </div>
           {/* end col-sm-4 */}
           <div className="col-sm-4">
-            <iframe width={560} height={315} src="https://www.youtube.com/embed/OkbuRa1o1wA" allowFullScreen/>
+            <div className={'fluid-width-video-wrapper'} style={{paddingTop: '56.25%'}}>
+              <iframe width={560} height={315} src="https://www.youtube.com/embed/OkbuRa1o1wA" allowFullScreen/>
+            </div>
           </div>
           {/* end col-sm-4 */}
         </div>
