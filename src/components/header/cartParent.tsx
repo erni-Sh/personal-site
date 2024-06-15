@@ -27,8 +27,8 @@ const CartParent: FC = (): JSX.Element => {
     <div className="cartParent">
       <div className="cartItems">
         <ul>
-          {cartItems.map(item => (
-            <li>
+          {cartItems.map((item, i) => (
+            <li key={i}>
               <div className="priceCart">
                 <img src={item.trumb} alt={item.title}/>
                 <a href={item.link}>{item.title}</a>
