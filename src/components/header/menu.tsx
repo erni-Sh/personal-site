@@ -24,7 +24,7 @@ const Menu: FC<IMenu> = ({closeMenu}): JSX.Element => {
   },[pathname])
 
   return (
-    <nav>
+    <nav onClick={() => setOpenedMenuItem(0)}>
       {CloseButton}
       <ul>
         {mainMenuItems.map((item, i) => (
@@ -35,8 +35,10 @@ const Menu: FC<IMenu> = ({closeMenu}): JSX.Element => {
           ].join(' ')} key={i}>
             <Link
               href={item.link || ''}
-              onClick={() => setOpenedMenuItem(i + 1)}
-            >{item.title}</Link>
+              onClick={(e) => {
+                e.stopPropagation();
+                setOpenedMenuItem(i + 1);
+              }}>{item.title}</Link>
             {!item.subMenu ? <></> :
               <ul className="sub-menu">
                 {item.subMenu.map((subItem, j) => (

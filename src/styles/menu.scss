@@ -99,7 +99,7 @@
 					visibility: hidden;
 					opacity: 0;
 					max-height: 0;
-					margin: 0;
+					margin: 0 auto;
 					@include transition(0.3s);
 					li {
 						display:block;
@@ -145,6 +145,9 @@
 				@include translateY(0);
 				opacity: 1;
 				visibility: visible;
+				width: fit-content;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	}

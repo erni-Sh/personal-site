@@ -1,6 +1,9 @@
 'use client'
 import React, {FC, JSX, useState} from 'react';
 import dynamic from 'next/dynamic';
+import CartParent from '@/components/header/cartParent';
+import Link from 'next/link';
+import ROUTES from '@/data/routes';
 const Menu = dynamic(() => import('@/components/header/menu'), {ssr: false});
 
 const Header: FC = (): JSX.Element => {
@@ -17,39 +20,7 @@ const Header: FC = (): JSX.Element => {
                 <li className="cartTitle"><img src="/assets/img/shop/cart.png" alt="" /><span>0</span></li>
               </ul>
             </div>{/* end myCart */}
-            <div className="cartParent">
-              <div className="cartItems">
-                <ul>
-                  <li>
-                    <div className="priceCart">
-                      <img src="assets/img/shop/cartContainer.png" alt="" />
-                      <a href="#">Hoodie T.Brothers {/* <span><i class="fa fa-times"></i></span> */}</a>
-                      <p>Price:&nbsp;<span>£15,99</span></p>
-                      <p className="quantity">Quantity: <span>1</span></p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="priceCart">
-                      <img src="assets/img/shop/cartContainer.png" alt="" />
-                      <a href="#">Hoodie T.Brothers {/* <span><i class="fa fa-times"></i></span> */}</a>
-                      <p>Price:&nbsp;<span>£15,99</span></p>
-                      <p className="quantity">Quantity: <span>1</span></p>
-                    </div>
-                  </li>
-                  <li>
-                    <div className="total">
-                      <a href="#">Sub Total<span>31,98£</span></a>
-                    </div>
-                  </li>
-                </ul>
-                <button type="submit" className="single_add_to_cart_button button alt buttonView">
-                  View Cart
-                </button>
-                <button type="submit" className="single_add_to_cart_button button alt buttonCheck">
-                  Checkout
-                </button>
-              </div>{/* end cartItems */}
-            </div>{/* end cartParent */}
+            <CartParent />
           </div>{/*end cartContainer  */}
           {/* Open Menu Button */}
           <a className="open-menu" onClick={() => setIsNavOpened(true)}>
@@ -66,8 +37,10 @@ const Header: FC = (): JSX.Element => {
       </div>
       {/* =============== STAR LOGO ================ */}
       <div className="logo-container-top">
-        <a href="index.html"><img src="/assets/img/logo/whiteLogo.png" alt="Aqura" /></a>
-      </div>{/* end logo-container-top */}
+        <Link href={ROUTES.MAIN.path}>
+          <img src="/assets/img/logo/whiteLogo.png" alt="Aqura" />
+        </Link>
+      </div>
       {/* =============== END LOGO ================ */}
     </div>
   );
