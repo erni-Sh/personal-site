@@ -27,3 +27,12 @@ jobs:
         cache: 'npm'
     - run: npm ci
     - run: npm run build
+    - name: ssh deploy on my server
+      uses: easingthemes/ssh-deploy@v2.1.4
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY_PROD }}
+        REMOTE_HOST: ${{ secrets.DEPLOY_HOST_PROD }}
+        REMOTE_USER: ${{ secrets.DEPLOY_USER_PROD }}
+        REMOTE_PORT: ${{ secrets.DEPLOY_PORT_PROD }}
+        SOURCE: "build/"
+        # TARGET: ${{ secrets.DEPLOY_TARGET_PROD }}
