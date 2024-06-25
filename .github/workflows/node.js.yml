@@ -35,7 +35,7 @@ jobs:
        server: testernest.ru
        username: u0545248_github
        password: ${{ secrets.ftp_password }}
-       local-dir: "build/"
+       local-dir: ".next/"
        server-dir: "testernest.ru/"
 
 #    - name: ssh deploy on my server
