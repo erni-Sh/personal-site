@@ -87,4 +87,4 @@ jobs:
           
           Repository: ${{ github.repository }}
           Author: ${{ github.actor }}
-          Site: ${{ secrets.SERVER_IP }}
+          Site: ${{ secrets.SERVER_IP }}:3000
