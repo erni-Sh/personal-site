@@ -12,7 +12,7 @@ import HomeShop from './sections/home-shop';
 const MainPage: FC = (): JSX.Element => {
   return (
     <main>
-      {/*<BreadCrumb />*/}
+      <BreadCrumb />
       <HomeAlbums />
       <Events />
       <CountDown />
