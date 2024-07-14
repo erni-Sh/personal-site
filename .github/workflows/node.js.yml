@@ -69,8 +69,8 @@ jobs:
         script: |
           docker stop $(docker ps -a -q)
           docker rm $(docker ps -a -q)
-          docker rmi ${{ steps.meta.outputs.tags }}/${{ steps.meta.outputs.tags }}
-          docker run -d -p 3000:3000 ${{ steps.meta.outputs.tags }}/${{ steps.meta.outputs.tags }}
+          docker rmi ${{ steps.meta.outputs.tags }}
+          docker run -d -p 3000:3000 ${{ steps.meta.outputs.tags }}
 
 #    - name: Use Node.js ${{ matrix.node-version }}
 #      uses: actions/setup-node@v3
