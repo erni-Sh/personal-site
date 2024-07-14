@@ -14,7 +14,7 @@ const MainPage: FC = (): JSX.Element => {
     <main>
       <BreadCrumb />
       <HomeAlbums />
-      <Events />
+      {/*<Events />*/}
       <CountDown />
       <HomeBlog />
       <HomeBranding />
