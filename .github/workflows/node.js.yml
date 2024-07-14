@@ -58,12 +58,12 @@ jobs:
 #        subject-digest: ${{ steps.push.outputs.digest }}
 #        push-to-registry: true
 
-    - name: print out example job
+    - name: start container on server
       uses: appleboy/ssh-action@v0.1.10
       with:
         host: ${{ secrets.SERVER_IP }}
         username: ${{ secrets.SERVER_USERNAME }}
-        key: ${{ secrets.SERVER_SSH }}
+        key: ${{ secrets.SERVER_PASSWORD }}
         command_timeout: 30m
         script: |
           docker image ls
