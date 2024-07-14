@@ -13,7 +13,7 @@ const MainPage: FC = (): JSX.Element => {
   return (
     <main>
       <BreadCrumb />
-      {/*<HomeAlbums />*/}
+      <HomeAlbums />
       <Events />
       <CountDown />
       <HomeBlog />
