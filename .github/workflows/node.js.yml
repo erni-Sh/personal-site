@@ -59,7 +59,7 @@ jobs:
 #        push-to-registry: true
 
     - name: start container on server
-      uses: appleboy/ssh-action@v0.1.10
+      uses: appleboy/ssh-action@v1.0.3
       with:
         host: ${{ secrets.SERVER_IP }}
         username: ${{ secrets.SERVER_USERNAME }}
