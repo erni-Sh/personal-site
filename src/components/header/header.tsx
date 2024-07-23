@@ -11,7 +11,7 @@ const Header: FC = (): JSX.Element => {
   const closeMenu = () => setIsNavOpened(false);
 
   return (
-    <div className="topHeader">
+    <header className="topHeader">
       <div className="header">
         <div className="rightTopHeader">
           <div className="cartContainer">
@@ -42,7 +42,7 @@ const Header: FC = (): JSX.Element => {
         </Link>
       </div>
       {/* =============== END LOGO ================ */}
-    </div>
+    </header>
   );
 };
 

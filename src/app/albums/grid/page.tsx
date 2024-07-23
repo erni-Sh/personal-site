@@ -1,9 +1,13 @@
 import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
+import AlbumsSlider from '@/app/albums/grid/sections/albums-slider';
+import AlbumsGrid from '@/app/albums/grid/sections/albums-grid';
 
 const Page: FC = (): JSX.Element => {
   return (
-    <SectionComingSoon />
+    <>
+      <AlbumsSlider />
+      <AlbumsGrid />
+    </>
   );
 };
 

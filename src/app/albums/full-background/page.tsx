@@ -1,10 +1,18 @@
 import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
+import FullScreenAlbum from '@/app/albums/full-background/sections/full-screen-album';
+
 
 const Page: FC = (): JSX.Element => {
-  return (
-    <SectionComingSoon />
-  );
+  return <>{
+    [
+      'http://theme-brothers.com/AquraHTML/assets/img/albums/a1.jpg',
+      'http://theme-brothers.com/AquraHTML/assets/img/albums/a2.jpg',
+      'http://theme-brothers.com/AquraHTML/assets/img/albums/a3.jpg',
+      'http://theme-brothers.com/AquraHTML/assets/img/albums/a4.jpg',
+    ].map(url => (
+      <FullScreenAlbum backgroundUrl={url} />
+    ))
+  }</>
 };
 
 export default Page;

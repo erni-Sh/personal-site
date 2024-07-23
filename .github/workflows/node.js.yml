@@ -80,8 +80,8 @@ jobs:
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
           "${{ github.event.commits[0].message }}"
-          in ${{ github.repository }}
-          actions finished!
+          
+          Actions in ${{ github.repository }} finished!
           
           Changes:
           https://github.com/${{ github.repository }}/commit/${{github.sha}}

@@ -18,7 +18,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {children}
+        <main style={{minHeight: 'calc(100vh - 58px)'}}>
+          {children}
+        </main>
         <Footer />
         <AudioPlayer />
         <Playlist />

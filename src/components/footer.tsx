@@ -2,7 +2,7 @@ import React, {FC, JSX} from 'react';
 
 const Footer: FC = (): JSX.Element => {
   return (
-    <section style={{backgroundColor: '#eeeeee'}} className="hide-section">
+    <footer style={{backgroundColor: '#eeeeee'}} className="hide-section">
       <div className="footer footerPadding">
         <div className="container">
           <div className="row">
@@ -33,7 +33,7 @@ const Footer: FC = (): JSX.Element => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
