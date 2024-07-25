@@ -9,8 +9,8 @@ const Page: FC = (): JSX.Element => {
       'http://theme-brothers.com/AquraHTML/assets/img/albums/a2.jpg',
       'http://theme-brothers.com/AquraHTML/assets/img/albums/a3.jpg',
       'http://theme-brothers.com/AquraHTML/assets/img/albums/a4.jpg',
-    ].map(url => (
-      <FullScreenAlbum backgroundUrl={url} />
+    ].map((url, i) => (
+      <FullScreenAlbum backgroundUrl={url} key={i} />
     ))
   }</>
 };

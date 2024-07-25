@@ -15,16 +15,18 @@ const AlbumsGrid: FC = (): JSX.Element => {
         <div className="categories">
           <ul className="clearfix" data-option-key="filter">
             <li><a href="#"><i className="fa fa-filter"/></a></li>
-            {filterStatuses.map(status => (
-              <li><a href="#" className="selected" data-option-value="*">{status}</a></li>
+            {filterStatuses.map((status, i) => (
+              <li key={i}>
+                <a href="#" className="selected" data-option-value="*">{status}</a>
+              </li>
             ))}
           </ul>
         </div>
 
         <div className="aqura-filter-content list-albums">
           <ul className="list-feature clearfix" style={{flexWrap: 'wrap'}}>
-            {albums.map(status => (
-              <AlbumsGridItem status={status} />
+            {albums.map((status, i) => (
+              <AlbumsGridItem status={status} key={i} />
             ))}
           </ul>
         </div>
