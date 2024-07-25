@@ -11,6 +11,7 @@ const AlbumTop: FC = (): JSX.Element => {
               className="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
               style={{
                 backgroundImage: 'url("http://theme-brothers.com/AquraHTML/assets/img/albums/single1.jpg")',
+                backgroundPositionX: 'center',
                 height: 800
               }}
               data-stellar-background-ratio="0.5"
