@@ -71,7 +71,7 @@ jobs:
           docker rm $(docker ps -a -q)
           docker rmi ${{ steps.meta.outputs.tags }}
           docker pull ${{ steps.meta.outputs.tags }}
-          docker run -d -p 3000:3000 ${{ steps.meta.outputs.tags }}
+          docker run -d -p 4000:4000 ${{ steps.meta.outputs.tags }}
 
     - name: Send Telegram Message
       uses: appleboy/telegram-action@master
@@ -85,4 +85,4 @@ jobs:
           
           Changes:
           https://github.com/${{ github.repository }}/commit/${{github.sha}}
-          Site: ${{ secrets.SERVER_IP }}:3000
+          Site: ${{ secrets.SERVER_IP }}:4000

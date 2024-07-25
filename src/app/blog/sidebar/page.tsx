@@ -1,10 +1,12 @@
 import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
+import Top from '@/app/blog/sidebar/sections/top';
+import BlogSidebarRight from '@/app/blog/sidebar/sections/blog-sidebar-right';
 
 const Page: FC = (): JSX.Element => {
-  return (
-    <SectionComingSoon />
-  );
+  return (<>
+    <Top />
+    <BlogSidebarRight />
+  </>);
 };
 
 export default Page;
