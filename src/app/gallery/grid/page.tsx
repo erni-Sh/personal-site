@@ -1,10 +1,12 @@
 import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
+import GalleryGridTop from '@/app/gallery/grid/sections/gallery-grid-top';
+import GalleryGrid from '@/app/gallery/grid/sections/gallery-grid';
 
 const Page: FC = (): JSX.Element => {
-  return (
-    <SectionComingSoon />
-  );
+  return (<>
+    <GalleryGridTop />
+    <GalleryGrid />
+  </>);
 };
 
 export default Page;
