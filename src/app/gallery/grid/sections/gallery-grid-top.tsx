@@ -6,6 +6,7 @@ const BG_IMAGE=`http://theme-brothers.com/AquraHTML/assets/img/content/galSg.jpg
 const GalleryGridTop: FC = (): JSX.Element => {
   return (
     <PageTop backgroundImageUrl={BG_IMAGE}>
+      <div className="breadTxt">
         <h1>
           albums grid
         </h1>
@@ -17,8 +18,9 @@ const GalleryGridTop: FC = (): JSX.Element => {
         <a href="#content" data-easing="easeInOutQuint" data-scroll data-speed={900} data-url="false">
           View More <i className="fa fa-angle-down"/>
         </a>
+      </div>
     </PageTop>
-  );
+);
 };
 
 export default GalleryGridTop;

@@ -1,7 +1,9 @@
-
 .no-mb .breadcrumb.breadcrumb-fullscreen {
   margin-bottom: 0;
+  height: 100vh;
+  background-position: 50% calc(var(--scrollTop) / 2);
 }
+
 .breadcrumb-fullscreen-parent {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -22,6 +24,11 @@
   bottom: -moz-calc(100% - 67px);
   bottom: calc(100% - 67px);
 }
+
+.affix {
+  position: fixed;
+}
+
 .breadcrumbCustom {
   height: 50rem!important;
 }
