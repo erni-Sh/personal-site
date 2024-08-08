@@ -4,6 +4,7 @@ import React, { FC, JSX, useEffect } from 'react';
 import { scrollTop } from '@/system/services/scroll-listener';
 import { useSelector } from 'react-redux';
 import { getIsHeaderCovered } from '@/redux/selectors/appStateSelectors';
+import { ImageBG } from '@/ui-kit/image-bg/image-bg';
 
 interface PageTopProps {
   backgroundImageUrl?: string;
@@ -12,7 +13,6 @@ interface PageTopProps {
 
 const PageTop: FC<PageTopProps> = ({backgroundImageUrl, children}): JSX.Element => {
   const isHeaderCovered = useSelector(getIsHeaderCovered);
-  console.log(isHeaderCovered);
 
   return (
     <section className="no-mb">
@@ -23,11 +23,19 @@ const PageTop: FC<PageTopProps> = ({backgroundImageUrl, children}): JSX.Element 
             height: !isHeaderCovered ? '100vh' : 0
           }}/>
           <div className={`breadcrumb-fullscreen-parent phone-menu-bg ${!isHeaderCovered ? 'affix' : ''}`}>
-            <div className="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
-                 style={{backgroundImage: backgroundImageUrl && `url(${backgroundImageUrl})`}}
-                 // data-stellar-background-ratio="0.5"
-                 // data-stellar-vertical-offset={0}
+            <div
+              className="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
+              style={{ backgroundColor: '#c4a878' }}
+              // style={{backgroundImage: backgroundImageUrl && `url(${backgroundImageUrl})`}}
+              // data-stellar-background-ratio="0.5"
+              // data-stellar-vertical-offset={0}
             >
+              {backgroundImageUrl &&
+                <ImageBG
+                  src={backgroundImageUrl}
+                  className={'breadcrumb-fullscreen_BG'}
+                />
+              }
               { children }
             </div>
           </div>

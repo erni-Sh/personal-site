@@ -1,0 +1,147 @@
+@keyframes opacityIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fromLeftEdge {
+  0% {
+    right: -50vw;
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes scaleFromCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes leftToCenter {
+  0% {
+    //transform: translateX(calc(100vw/15));
+    left: calc(100vw / 15);
+    opacity: 0;
+  }
+
+  100% {
+    //transform: translateX(0);
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop {
+  0% {
+    top: -100vh;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    bottom: -100vh;
+    opacity: 0;
+  }
+
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromBottomLite {
+  0% {
+    bottom: -30px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fromTop_delay50 {
+  0% {
+    top: -100vh;
+    opacity: 0;
+  }
+
+  50% {
+    top: -100vh;
+    opacity: 0;
+  }
+
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes moonShine {
+  0% {
+    filter: drop-shadow(0 0 3px white);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px white);
+  }
+}
+
+@keyframes moonShineScale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+// text animation
+.notOnScreen {
+  transition: 0.6s ease-in-out all;
+  transform: translateY(30px);
+  opacity: 0;
+}
+
+.onScreen {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+// from animista
+@keyframes puff-in-top {
+  0% {
+    //transform: scale(2);
+    //transform-origin: 50% 0%;
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    //transform: scale(1);
+    //transform-origin: 50% 0%;
+    filter: blur(0px);
+    opacity: 1;
+  }
+}

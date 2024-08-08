@@ -85,4 +85,4 @@ jobs:
           
           Changes:
           https://github.com/${{ github.repository }}/commit/${{github.sha}}
-          Site: ${{ secrets.SERVER_IP }}:4000
+          Site: http://${{ secrets.SERVER_IP }}:4000

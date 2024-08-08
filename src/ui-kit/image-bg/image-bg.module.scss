@@ -1,0 +1,27 @@
+@import '@/ui-kit/variable/animations';
+@import '@/ui-kit/variable/variable';
+// parent & child position must be relative
+
+.imageBG {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  content: ' ';
+  transition: 0.3s ease opacity;
+
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  //animation: opacityIn .4s forwards;
+
+  &_isLoading {
+    opacity: 0;
+  }
+
+  &_isLoaded {
+    opacity: 1;
+  }
+}

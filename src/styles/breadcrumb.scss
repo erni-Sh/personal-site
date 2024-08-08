@@ -1,7 +1,12 @@
 .no-mb .breadcrumb.breadcrumb-fullscreen {
   margin-bottom: 0;
   height: 100vh;
-  background-position: 50% calc(var(--scrollTop) / 2);
+  //background-position: 50% calc(var(--scrollTop) / 2);
+
+  .breadcrumb-fullscreen_BG {
+    background-position: 50% calc(var(--scrollTop) / 2);
+    background-repeat: repeat;
+  }
 }
 
 .breadcrumb-fullscreen-parent {
