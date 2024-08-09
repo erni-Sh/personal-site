@@ -56,6 +56,7 @@
 				@include transition;
 				a {
 					font-family: $lekton;
+					//font-family: $baseFont;
 					font-weight: 400;
 					font-size: 2.4rem;
 					line-height: 1.2rem;
@@ -66,7 +67,6 @@
 					text-decoration: none;
 					letter-spacing: 0.1rem;
 					z-index: 1;
-					position: relative;
 					outline: none;
 					@include transition;
 					&:before {
@@ -319,7 +319,7 @@
 					}
 					p{
 						margin-top: 1rem;
-						margin-bottom: 0rem;
+						margin-bottom: 0;
 					}
 				}
 			}

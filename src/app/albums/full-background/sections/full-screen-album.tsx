@@ -10,8 +10,8 @@ const FullScreenAlbum: FC<FullScreenAlbumProps> = ({ backgroundUrl}): JSX.Elemen
       backgroundImage: `url(${backgroundUrl})`
     }}>
       <div className="fullAlbumsContent col-sm-5">
-        <h1>Noon Xoxo</h1>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing donec odio.<br/>
+        <h1>Название альбома</h1>
+        <p>Описание бла-бла на русскоя языке dolor sit amet, consectetuer <br/>
           &nbsp;&nbsp;&nbsp;Quisque volutpat mattis am. Nullam malesuada erat ut turpis.<br/>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Suspendisse urna nibh, nean dignissim
           felis....</p>

@@ -20,16 +20,26 @@ $roua-primary-margin-bottom 	: 80px;
 $colibri-color-theme: rgba(252,254,112,0.99);
 $aqura-color-theme-alpha-95: rgba(255,255,255,0.98);
 $aqura-color:rgba(255,255,255,0.75);
-$anchor:#999999;
-$purple:#bb9b69;
-$lekton:'Lekton', sans-serif;
-$pt:'PT Sans', sans-serif;
-$libre:'Libre Baskerville', serif;
-$abel:'Abel', sans-serif;
+$anchor: #999999;
+$purple: #bb9b69;
+
+$lekton: 'Lekton', sans-serif; // заменить
+$pt: 'PT Sans', sans-serif;
+$libre: 'Libre Baskerville', serif; // заменить
+
+//$abel: 'Abel', sans-serif;
+$abel: "Arsenal", sans-serif;
+//$abel: "Zen Kaku Gothic New", sans-serif;
+
 $mont: 'Montserrat', sans-serif;
-$baseFont:'Karla', sans-serif;
+//$baseFont: 'Karla', sans-serif;
+//$baseFont: 'Noto Sans KR', sans-serif;
+//$baseFont: 'M PLUS Rounded 1c', sans-serif;
+//$baseFont: "Alegreya Sans", sans-serif;
+//$baseFont: "Sawarabi Gothic", sans-serif;
+$baseFont: "Wix Madefor Text", sans-serif;
 $golden: #bb9b69;
-$raleway: 'Raleway', sans-serif;;
+$raleway: 'Raleway', sans-serif;
 $oswald: 'Oswald', sans-serif;
 
 @font-face {
@@ -70,7 +80,3 @@ $oswald: 'Oswald', sans-serif;
 
 $theme-font-serif: 			Georgia , Times , serif;
 $theme-font-open-sans: 		"Open Sans" , Helvetica , Arial , sans-serif;
-
-
-
-

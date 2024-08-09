@@ -9,13 +9,13 @@ const BiographyContent: FC = (): JSX.Element => {
       <div className="container">
         <div className="sectionTitle paddingBottom">
           <span className="heading-t3"/>
-          <h2><a href="albums.html">Biography</a></h2>
+          <h2><a href="albums.html">Biography Биография</a></h2>
           <span className="heading-b3"/>
         </div>
         {/* end sectionTtile */}
         <div className="row">
           <div className="col-sm-6">
-            <p>Emi Haze graduated from the Institute
+            <p>Что-то на русском
               of Design in Verona with
               a degree in Graphic Design
               and Advertising Design.I live in the north-east of Italy and my huge passion is digital art.

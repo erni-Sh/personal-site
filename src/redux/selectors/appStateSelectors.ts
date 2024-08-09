@@ -36,5 +36,3 @@ export const getIsHeaderCovered = (state: RootState) =>
 //   // state.appState.isStoredUserLoaded &&
 //   state.appState.isRouteCorrect
 // // state.appState.isFontsLoaded;
-
-

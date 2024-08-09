@@ -4,14 +4,18 @@ import dynamic from 'next/dynamic';
 import CartParent from '@/components/header/cartParent';
 import Link from 'next/link';
 import ROUTES from '@/data/routes';
+import { useSelector } from 'react-redux';
+import { getIsHeaderCovered } from '@/redux/selectors/appStateSelectors';
 const Menu = dynamic(() => import('@/components/header/menu'), {ssr: false});
 
 const Header: FC = (): JSX.Element => {
   const [isNavOpened, setIsNavOpened] = useState(false);
   const closeMenu = () => setIsNavOpened(false);
 
+  const isHeaderCovered = useSelector(getIsHeaderCovered);
+
   return (
-    <header className="topHeader">
+    <header className={`topHeader ${!isHeaderCovered ? 'topHeader_isCovered' : ''}`}>
       <div className="header">
         <div className="rightTopHeader">
           <div className="cartContainer">

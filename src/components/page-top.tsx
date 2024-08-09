@@ -1,7 +1,5 @@
 "use client"
-
-import React, { FC, JSX, useEffect } from 'react';
-import { scrollTop } from '@/system/services/scroll-listener';
+import React, { FC, JSX } from 'react';
 import { useSelector } from 'react-redux';
 import { getIsHeaderCovered } from '@/redux/selectors/appStateSelectors';
 import { ImageBG } from '@/ui-kit/image-bg/image-bg';
@@ -25,7 +23,6 @@ const PageTop: FC<PageTopProps> = ({backgroundImageUrl, children}): JSX.Element 
           <div className={`breadcrumb-fullscreen-parent phone-menu-bg ${!isHeaderCovered ? 'affix' : ''}`}>
             <div
               className="breadcrumb breadcrumb-fullscreen alignleft small-description overlay almost-black-overlay"
-              style={{ backgroundColor: '#c4a878' }}
               // style={{backgroundImage: backgroundImageUrl && `url(${backgroundImageUrl})`}}
               // data-stellar-background-ratio="0.5"
               // data-stellar-vertical-offset={0}
@@ -33,7 +30,7 @@ const PageTop: FC<PageTopProps> = ({backgroundImageUrl, children}): JSX.Element 
               {backgroundImageUrl &&
                 <ImageBG
                   src={backgroundImageUrl}
-                  className={'breadcrumb-fullscreen_BG'}
+                  className={'breadcrumb_BG'}
                 />
               }
               { children }

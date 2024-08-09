@@ -3,33 +3,29 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getIsHeaderCovered } from '@/redux/selectors/appStateSelectors';
 import { setIsHeaderCovered } from '@/redux/slices/appStateSlice';
 
-export let scrollTop = 0;
-
 const ScrollListener = () => {
   // const router = useRouter()
   const dispatch = useDispatch();
   // const isVisibleScrollToTop = useSelector(getIsVisibleScrollToTop)
   const isHeaderCovered = useSelector(getIsHeaderCovered);
 
-  const container =
-    (typeof window !== 'undefined' &&
-    document.getElementsByTagName('body')?.[0])
+  // const container =
+  //   (typeof window !== 'undefined' &&
+  //   document.getElementsByTagName('body')?.[0])
 
   // -------- CHECK SCROLL POSITION ---------
   useEffect(() => {
     const handleSet = () => {
-      const vh = window.innerHeight;
-      scrollTop = window.scrollY;
+      const scrollTop = window.scrollY;
+      // console.log(scrollTop);
 
-      if (isHeaderCovered !== (vh - 67) > scrollTop) {
-        console.log('i am here!');
+      if (isHeaderCovered !== (window.innerHeight - 67) > scrollTop) {
         dispatch(setIsHeaderCovered(!isHeaderCovered));
       }
       // isVisibleScrollToTop !==
       // container.scrollTop > SIZE_VIS_SCROLL_TO_TOP_IN_PX &&
       // dispatch(setIsVisibleScrollToTop(!isVisibleScrollToTop))
       document.documentElement.style.setProperty('--scrollTop', `${scrollTop}px`)
-
     }
 
     handleSet()

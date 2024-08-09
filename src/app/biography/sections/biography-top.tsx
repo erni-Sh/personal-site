@@ -8,7 +8,7 @@ const BiographyTop: FC = (): JSX.Element => {
     <PageTop backgroundImageUrl={BG_IMAGE}>
       <div className="breadTxt">
         <h1>
-          Wanda Valdis
+          Wanda Valdis Ванда
         </h1>
         <p>
           Theres an old saying, That what doesnt kill you, makes you stronger I dont believe that. <br/> I think the
