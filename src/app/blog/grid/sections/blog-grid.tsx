@@ -1,6 +1,34 @@
-import React, { FC, JSX } from 'react';
+'use client';
+import React, { FC, JSX, useEffect, useRef, useState } from 'react';
+import dynamic from 'next/dynamic';
+
+// const loadIsotope = () => require('isotope-layout');
+// let Isotope;
 
 const BlogGrid: FC = (): JSX.Element => {
+  // const [filter, setFilter] = useState('');
+
+  // const containerRef = useRef<HTMLUListElement | null>(null);
+
+  // Ref to store the isotope object
+  // const isotopeRef = useRef();
+
+  // useEffect(() => {
+  //   Isotope = loadIsotope();
+  //
+  //   // use Isotope
+  //   isotopeRef.current = new Isotope(containerRef.current, {
+  //     filter: filter,
+  //     percentPosition: true,
+  //     itemSelector: 'li',
+  //     layoutMode: 'masonry',
+  //     masonry: {
+  //       // columnWidth: '.grid-sizer'
+  //     }
+  //     // layoutMode: 'packery',
+  //   });
+  // }, [filter]);
+
   return (
     <section className="aquraFilter padding" id="content">
       <div className="container">
@@ -9,7 +37,10 @@ const BlogGrid: FC = (): JSX.Element => {
           <ul className="clearfix" data-option-key="filter">
             <li><a href="#"><i className="fa fa-filter"/></a></li>
             <li><a href="#" className="selected" data-option-value="*">All</a></li>
-            <li><a href="#" data-option-value=".news">News</a></li>
+            <li><a
+              data-option-value=".news"
+              // onClick={() => setFilter('.news')}
+            >News</a></li>
             <li><a href="#" data-option-value=".audio">Audio</a></li>
             <li><a href="#" data-option-value=".cloud">Soundcloud</a></li>
             <li><a href="#" data-option-value=".video">Video</a></li>

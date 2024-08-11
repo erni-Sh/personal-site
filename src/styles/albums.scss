@@ -21,7 +21,7 @@
   font-weight: 700;
   font-size: 1.9rem;
   position: relative;
-  font-family: 'Raleway', sans-serif;
+  font-family: $raleway;
   color: #fff;
   line-height: 2.8rem;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
   font-size: 1.4rem;
   padding: 4rem 0 2.3rem 0;
   font-weight: 400;
-  font-family: 'Raleway', sans-serif;
+  font-family: $raleway;
   color: #fff;
   text-align: right;
 }
@@ -112,7 +112,7 @@
   padding-left: 2rem;
   position: relative;
   font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: $raleway;
   font-weight: 700;
   -webkit-transition-delay: 0;
   transition-delay: 0;
@@ -296,8 +296,8 @@
     }
   }
 }
-@import url(http://fonts.googleapis.com/css?family=Raleway+Dots);
-@import url(http://fonts.googleapis.com/css?family=Advent+Pro:400,200,700);
+
+
 // $import url(http://weloveiconfonts.com/api/?family=entypo);
 /* entypo */
 [class*="entypo-"]:before {
@@ -793,7 +793,7 @@ p{
 	}
   .fullAlbums{
     background-size: cover;
-    background-attachment: initial;
+    //background-attachment: initial;
   }
   section #services li{
     margin-right: 5px;
