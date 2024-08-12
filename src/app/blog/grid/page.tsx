@@ -1,12 +1,11 @@
 import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
 import BlogGridTop from '@/app/blog/grid/sections/blog-grid-top';
 import BlogGrid from '@/app/blog/grid/sections/blog-grid';
-import { GetServerSideProps } from 'next';
 import { API_WP_URL, WP_Paths } from '@/redux/api/apiResoursePaths';
+import { WP_Post, WP_REST_API_Post } from 'wp-types';
 
 const getData = async () => {
-  let posts = null
+  let posts = null;
   try {
     const res = await fetch(
       API_WP_URL + WP_Paths.POSTS,
@@ -14,7 +13,7 @@ const getData = async () => {
         // headers: new Headers({ Authorization: FDAuthorization }),
       },
     )
-    posts = (await res.json())
+    posts = (await res.json()) as WP_REST_API_Post[];
   } catch (e) {
     console.log(e)
   }
@@ -23,14 +22,12 @@ const getData = async () => {
 }
 
 const Page: FC = async (): Promise<JSX.Element> => {
-  const posts = await getData();
-
-  // @ts-ignore
-  console.log(posts?.map(p => p.title.rendered ));
+  const posts: WP_REST_API_Post[] | null = await getData();
 
   return (<>
     <BlogGridTop />
-    <BlogGrid />
+    {!posts ? <></> :
+      <BlogGrid posts={posts} />}
   </>);
 };
 
