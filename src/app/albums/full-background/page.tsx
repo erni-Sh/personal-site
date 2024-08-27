@@ -1,7 +1,6 @@
 import React, {FC, JSX} from 'react';
 import FullScreenAlbum from '@/app/albums/full-background/sections/full-screen-album';
 
-
 const Page: FC = (): JSX.Element => {
   return <>{
     [
