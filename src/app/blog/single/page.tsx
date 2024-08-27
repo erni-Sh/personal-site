@@ -1,5 +1,4 @@
-import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
+import React, { FC, JSX } from 'react';
 import Top from '@/app/blog/single/sections/top';
 import BlogSingle from '@/app/blog/single/sections/blog-single';
 
