@@ -1,5 +1,5 @@
 'use client';
-import React, { FC, JSX, useEffect, useRef, useState } from 'react';
+import React, { FC, JSX } from 'react';
 import { WP_REST_API_Post } from 'wp-types';
 
 // const loadIsotope = () => require('isotope-layout');
