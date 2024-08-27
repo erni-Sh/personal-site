@@ -1,5 +1,4 @@
-import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
+import React, { FC, JSX } from 'react';
 import EventsTop from '@/app/events/sections/events-top';
 import EventsList from '@/app/events/sections/events-list';
 
