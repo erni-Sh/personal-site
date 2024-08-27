@@ -1,5 +1,4 @@
-import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
+import React, { FC, JSX } from 'react';
 import GalleryParallax from '@/app/gallery/scroll/sections/gallery-parallax';
 
 const Page: FC = (): JSX.Element => {
