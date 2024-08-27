@@ -1,5 +1,4 @@
-import React, {FC, JSX} from 'react';
-import SectionComingSoon from '@/components/section-coming-soon';
+import React, { FC, JSX } from 'react';
 import ContactsTop from '@/app/contact/sections/contacts-top';
 import GetInTouch from '@/app/contact/sections/get-in-touch';
 import Map from '@/app/contact/sections/map';
