@@ -1,8 +1,8 @@
-import React, {FC, JSX} from 'react';
+import React, { FC, JSX } from 'react';
 import BlogGridTop from '@/app/blog/grid/sections/blog-grid-top';
 import BlogGrid from '@/app/blog/grid/sections/blog-grid';
 import { API_WP_URL, WP_Paths } from '@/redux/api/apiResoursePaths';
-import { WP_Post, WP_REST_API_Post } from 'wp-types';
+import { WP_REST_API_Post } from 'wp-types';
 
 const getData = async () => {
   let posts = null;
